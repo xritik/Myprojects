@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock in html & css</title>
+    <style>         
+        *{
+            margin: 0px;
+            display: inline block;
+            color: white;
+            font-size: 22px;
+            overflow: hidden;
+        }
+        .circle1{
+            height: 600px;
+            width: 600px;
+            border-radius: 50%;
+            border: 20px groove black;
+            animation: ritik 43200s infinite linear;
+            background-color: white;
+        }
+        .hour{
+            height: 300px;
+            width: 15px;
+            background-color: black;
+        }
+        .circle2{
+            margin-top: -640px;
+            height: 600px;
+            width: 600px;
+            border-radius: 50%;
+            border: 20px groove black;
+            animation: ritik 3600s infinite linear;
+        }
+        .minute{
+            height: 300px;
+            width: 7px;
+            background-color: yellow;
+        }
+        .circle3{
+            margin-top: -640px;
+            height: 600px;
+            width: 600px;
+            border-radius: 50%;
+            border: 20px groove black;
+            animation: ritik 60s infinite linear;
+        }
+        .second{
+            height: 300px;
+            width: 2px;
+            background-color: red;
+            color: red;
+            font-size: 40px;
+        }
+        .circle4{
+            margin-top: -15px;
+            height: 30px;
+            width: 30px;
+            background-color: black;
+            border-radius: 50%;
+        }
+        .body{
+            position: absolute;
+            margin-top: -640px;
+            margin-left: 363px;
+            height: 600px;
+            width: 600px;
+            border-radius: 50%;
+            border: 20px groove brown;
+        }
+        @keyframes ritik {
+            100% {transform: rotate(360deg);}
+        }
+        .a12{
+            position: absolute;
+            margin-top: -642px;
+            margin-left: 672px;
+        }
+        .a6{
+            position: absolute;
+            margin-top: -22px;
+            margin-left: 680px;
+        }
+        .a9{
+            position: absolute;
+            margin-top: -330px;
+            margin-left: 368px;
+        }
+        .a3{
+            position: absolute;
+            margin-top: -330px;
+            margin-left: 987px;
+        }
+        .a{
+            position: absolute;
+            color: white;
+            font-size: 100px;
+        }
+        .a10{
+            margin-top: -560px;
+            margin-left: 402px;
+        }
+        .a11{
+            margin-top: -675px;
+            margin-left: 515px;
+        }
+        .a1{
+            margin-top: -675px;
+            margin-left: 825px;
+        }
+        .a2{
+            margin-top: -560px;
+            margin-left: 940px;
+        }
+        .a8{
+            margin-top: -250px;
+            margin-left: 402px;
+        }
+        .a7{
+            margin-top: -138px;
+            margin-left: 515px;
+        }
+        .a5{
+            margin-top: -138px;
+            margin-left: 825px;
+        }
+        .a4{
+            margin-top: -250px;
+            margin-left: 940px;
+        }
+        .body2{
+            position: absolute;
+            margin-top: -620px;
+            margin-left: 383px;
+            height: 520px;
+            width: 520px;
+            border-radius: 50%;
+            border: 40px solid white;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="circle1">
+            <div class="hour"></div>
+        </div>
+        <div class="circle2">
+            <div class="minute"></div>
+        </div>
+        <div class="circle3">
+            <div class="second">^</div>
+            <div class="circle4">.</div>
+        </div>
+    </center>
+    <div class="body2"></div>
+    <div class="body"></div>
+    <div class="a12">12</div>
+    <div class="a6">6</div>
+    <div class="a9">9</div>
+    <div class="a3">3</div>
+    <div class="a a10">.</div>
+    <div class="a a11">.</div>
+    <div class="a a1">.</div>
+    <div class="a a2">.</div>
+    <div class="a a7">.</div>
+    <div class="a a8">.</div>
+    <div class="a a4">.</div>
+    <div class="a a5">.</div>    
+</body>
+</html>
