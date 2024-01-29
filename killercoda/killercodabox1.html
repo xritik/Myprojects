@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playgrounds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            font-family: 'Outfit', sans-serif;
+        }
+        nav{
+            height: 65px;
+            background-color: black;
+        }
+        .navimg{
+            margin-left: 113px;
+            margin-top: 12px;
+        }
+        .navimg2{
+            margin-left: 52px;
+            margin-bottom: 13px;
+        }
+        .navimg3{
+            margin-left: 10px;
+            margin-bottom: 12px;
+        }
+        .navimg4{
+            margin-left: 6px;
+            margin-bottom: 8px;
+        }
+        li{
+            font-family: 'Outfit', sans-serif;
+            display: inline;
+            margin-left: 44px;
+            
+        }
+        .a{
+            text-decoration: none;
+            color: #f5f5f5;
+            font-size: 15.5px;
+            letter-spacing: 0.4px;
+        }
+        ul{
+            margin-left: 555px;
+            margin-top: -35px;
+        }
+        .b{
+            font-family: 'Outfit', sans-serif;
+            height: 44px;
+            font-size: 16px;
+            width: 90px;
+            position: absolute;
+            left: 1120px;
+            top: -1px;
+            top: 10px;
+            border: 3px solid grey;
+            cursor: pointer;
+        }
+        .bgcolor{
+            height: 416px;
+            background-color: #f3f3f3;
+        }
+        .maindiv{
+            padding-left: 120px;
+            padding-top: 96px;
+        }
+        .playgrounds{
+            height: 57px;
+            width: 184px;
+            background-color: black;
+            color: white;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+            padding-top: 17px;
+            display: inline-block;
+        }
+        .emptybase{
+            height: 46px;
+            width: 287px;
+            background-color: #dcdcdc;
+            color: #555555;
+            font-size: 22.4px;
+            display: flex;
+            align-items: center;
+            padding-left: 29.5px;
+            margin-top: 8px;
+        }
+        .text{
+            color: #5f5555;
+            margin-top: 8px;
+            line-height: 24px;
+        }
+        .box1{
+            height: 280px;
+            width: 284px;
+            background-color: black;
+            position: absolute;
+            top: 555px;
+            left: 77px;
+        }
+        .boxtext1{
+            position: absolute;
+            top: 586px;
+            left: 98.4px;
+            font-size: 20px;
+            width: 180px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext2{
+            position: absolute;
+            top: 618px;
+            left: 98.4px;
+            font-size: 16px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+        .box2{
+            height: 280px;
+            width: 283px;
+            background-color: black;
+            position: absolute;
+            top: 555px;
+            left: 381px;
+        }
+        .boxtext3{
+            position: absolute;
+            top: 586px;
+            left: 402.1px;
+            font-size: 20px;
+            width: 180px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext4{
+            position: absolute;
+            top: 618px;
+            left: 402.1px;
+            font-size: 16px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+        .box3{
+            height: 280px;
+            width: 284px;
+            background-color: black;
+            position: absolute;
+            top: 555px;
+            left: 684px;
+        }
+        .boxtext5{
+            position: absolute;
+            top: 586px;
+            left: 705.6px;
+            font-size: 20px;
+            width: 180px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext6{
+            position: absolute;
+            top: 618px;
+            left: 705.6px;
+            font-size: 16px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+        .box4{
+            height: 280px;
+            width: 284px;
+            background-color: black;
+            position: absolute;
+            top: 555px;
+            left: 988px;
+        }
+        .boxtext7{
+            position: absolute;
+            top: 586px;
+            left: 1008.9px;
+            font-size: 20px;
+            width: 180px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext8{
+            position: absolute;
+            top: 618px;
+            left: 1008.9px;
+            font-size: 16px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .box5{
+            height: 280px;
+            width: 284px;
+            background-color: black;
+            position: absolute;
+            top: 855px;
+            left: 77px;
+        }
+        .boxtext11{
+            position: absolute;
+            top: 886px;
+            left: 98.6px;
+            font-size: 20px;
+            width: 180px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext12{
+            position: absolute;
+            top: 918px;
+            left: 98.6px;
+            font-size: 16px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+        .box6{
+            height: 280px;
+            width: 284px;
+            background-color: black;
+            position: absolute;
+            top: 855px;
+            left: 381px;
+        }
+        .boxtext13{
+            position: absolute;
+            top: 886px;
+            left: 402px;
+            font-size: 20px;
+            width: 180px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext14{
+            position: absolute;
+            top: 918px;
+            left: 402px;
+            font-size: 16px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+        
+        .black{
+            height: 466px;
+            width: 1349px;
+            background-color: black;
+            position: absolute;
+            top: 1304px;
+        }
+        .blackimg{
+            width: 90px;
+        }
+        .ul2{
+            position: absolute;
+            top: 83px;
+            left: -519px;
+            font-size: 13px;
+            padding-bottom: 15px;
+        }
+        .list1{
+            text-decoration: none;
+            color: white;
+        } 
+        .ul2 li{
+            display: flex;
+            padding-bottom: 21px;
+        }
+        .ul3{
+            position: absolute;
+            top: 101px;
+            left: -140px;
+            font-size: 13px;
+            padding-bottom: 15px;
+        }
+        .list2{
+            font-size: 16px;
+            color: white;
+        } 
+        .ul3 li{
+            display: flex;
+            padding-bottom: 21px;
+        }
+        .ul4{
+            position: absolute;
+            top: 101px;
+            left: 239px;
+            font-size: 13px;
+            padding-bottom: 15px;
+        }
+        .list3{
+            font-size: 16px;
+            color: white;
+        } 
+        .ul4 li{
+            display: flex;
+            padding-bottom: 21px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="javascript:void(0)"><img src="killercoda1.jpg" height="42px" width="121px" class="navimg"></a>
+        <a href="https://twitter.com/killercoda" target="_blank"><img src="twitter.png" height="15px" width="19px" class="navimg2"></a>
+        <a href="https://www.linkedin.com/company/killercoda/" target="_blank"><img src="linkedin.webp" height="17px" width="17px" class="navimg3"></a>
+        <a href="https://killercoda.com/slack" target="_blank"><img src="slack.png" height="25px" width="25px" class="navimg4"></a>
+        <span>
+            <ul>
+                <li><a href="javascript:void(0)" class="a">Areas</a></li>
+                <li><a href="javascript:void(0)" class="a">About</a></li>
+                <li><a href="javascript:void(0)" class="a">Pricing</a></li>
+                <li><a href="javascript:void(0)" class="a">Creators</a></li>
+                <li><a href="javascript:void(0)" class="a">Students</a></li>
+            </ul>
+        </span>
+        <button class="b">Login</button>
+    </nav>  
+    <div class="bgcolor">
+        <div class="maindiv">
+            <a href="javascript:void(0)"><div class="playgrounds">
+                <b>Playgrounds</b>
+            </div></a>
+            <div class="emptybase">
+                <b>Empty base environments</b>
+            </div>
+            <div class="text">
+                Playgrounds have no tasks or questions and can be used to work on things from scratch. <br>
+                The CKS, CKA and CKAD ones will always have the same K8s version as currently used in the Linux <br>Foundation exams.
+            </div>
+        </div>
+    </div>
+    <a href="javascript:void(0)"><div class="box1"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext1">Ubuntu</div></a>
+    <a href="javascript:void(0)"><div class="boxtext2">Single node Ubuntu Environment</div></a>
+
+    <a href="javascript:void(0)"><div class="box2"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext3">Kubernetes 1.28</div></a>
+    <a href="javascript:void(0)"><div class="boxtext4">Environment with latest Kubeadm version a few weeks after release</div></a>
+
+    <a href="javascript:void(0)"><div class="box3"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext5">CKS</div></a>
+    <a href="javascript:void(0)"><div class="boxtext6">Environment with current version of the CKS exam</div></a>
+
+    <a href="javascript:void(0)"><div class="box4"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext7">CKA</div></a>
+    <a href="javascript:void(0)"><div class="boxtext8">Environment with current version of the CKA exam</div></a>
+
+    <a href="javascript:void(0)"><div class="box5"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext11">CKAD</div></a>
+    <a href="javascript:void(0)"><div class="boxtext12">Environment with current version of the CKAD exam</div></a>
+
+    <a href="javascript:void(0)"><div class="box6"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext13">Theia</div></a>
+    <a href="javascript:void(0)"><div class="boxtext14">An Open, Flexible and Extensible Cloud & Desktop IDE Platform</div></a>
+    
+  
+    <div class="black">
+        <ul class="ul2">
+            <li><a href="javascript:void(0)"><img src="killercoda2.svg" class="blackimg"></a></li><br><br>
+            <li><a href="javascript:void(0)" class="list1">About</a></li>
+            <li><a href="javascript:void(0)" class="list1">Explore</a></li>
+            <li><a href="javascript:void(0)" class="list1">Learn Kubernetes Security</a></li></a>
+            <li><a href="javascript:void(0)" class="list1">Creators</a></li>
+            <li><a href="javascript:void(0)" class="list1">Students</a></li>
+            <li><a href="javascript:void(0)" class="list1">Contribute</a></li>
+            <li><a href="javascript:void(0)" class="list1">Legal / Privacy</a></li></a>
+        </ul>
+        <ul class="ul3">
+            <li class="list2">CONTENT</li><br><br>
+            <li><a href="javascript:void(0)" class="list1">PLUS</a></li>
+            <li><a href="javascript:void(0)" class="list1">FAQ</a></li>
+            <li><a href="javascript:void(0)" class="list1">Support</a></li></a>
+            <li><a href="javascript:void(0)" class="list1">Business Contact</a></li>
+            <li><a href="javascript:void(0)" class="list1">Pricing</a></li>
+            <li><a href="javascript:void(0)" class="list1">Media / Press</a></li>
+            <li><a href="javascript:void(0)" class="list1">We vs Killer Shell</a></li></a>
+            <li><a href="javascript:void(0)" class="list1">Bug Bounty</a></li></a>
+        </ul>
+        <ul class="ul4">
+            <li class="list3">LINKS</li><br><br>
+            <li><a href="javascript:void(0)" class="list1">Killer Shell</a></li>
+            <li><a href="https://twitter.com/killercoda" target="_blank"><img src="twitter.png" height="15px" width="19px"></a></li>
+            <li><a href="https://www.linkedin.com/company/killercoda/" target="_blank"><img src="linkedin.webp" height="17px" width="17px"></a></li></a>
+            <li><a href="https://killercoda.com/slack" target="_blank"><img src="slack.png" height="25px" width="25px"></a></li>
+        </ul>
+
+    </div>
+    
+</body>
+</html>

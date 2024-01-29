@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examples</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            font-family: 'Outfit', sans-serif;
+        }
+        nav{
+            height: 65px;
+            background-color: black;
+        }
+        .navimg{
+            margin-left: 113px;
+            margin-top: 12px;
+        }
+        .navimg2{
+            margin-left: 52px;
+            margin-bottom: 13px;
+        }
+        .navimg3{
+            margin-left: 10px;
+            margin-bottom: 12px;
+        }
+        .navimg4{
+            margin-left: 6px;
+            margin-bottom: 8px;
+        }
+        li{
+            font-family: 'Outfit', sans-serif;
+            display: inline;
+            margin-left: 44px;
+            
+        }
+        .a{
+            text-decoration: none;
+            color: #f5f5f5;
+            font-size: 15.5px;
+            letter-spacing: 0.4px;
+        }
+        ul{
+            margin-left: 555px;
+            margin-top: -35px;
+        }
+        .b{
+            font-family: 'Outfit', sans-serif;
+            height: 44px;
+            font-size: 16px;
+            width: 90px;
+            position: absolute;
+            left: 1120px;
+            top: -1px;
+            top: 10px;
+            border: 3px solid grey;
+            cursor: pointer;
+        }
+        .bgcolor{
+            height: 464px;
+            background-color: #f3f3f3;
+        }
+        .maindiv{
+            padding-left: 120px;
+            padding-top: 96px;
+        }
+        .examples{
+            height: 57px;
+            width: 149px;
+            background-color: black;
+            color: white;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+            padding-top: 17px;
+            display: inline-block;
+        }
+        .emptybase{
+            height: 46px;
+            width: 394px;
+            background-color: #dcdcdc;
+            color: #555555;
+            font-size: 22.4px;
+            display: flex;
+            align-items: center;
+            padding-left: 29.5px;
+            margin-top: 8px;
+        }
+        .text{
+            color: #5f5555;
+            margin-top: 8px;
+            line-height: 24px;
+        }
+        .links{
+            text-decoration: none;
+            color: black;
+        }
+        .link{
+            text-decoration: none;
+            color: black;
+        }
+        .links:hover{
+            text-decoration: underline;
+        }
+
+        .box1{
+            height: 280px;
+            width: 284px;
+            background-color: black;
+            position: absolute;
+            top: 603px;
+            left: 77px;
+        }
+        .boxtext1{
+            position: absolute;
+            top: 634px;
+            left: 98.4px;
+            font-size: 20px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext2{
+            position: absolute;
+            top: 666px;
+            left: 98.4px;
+            font-size: 16px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+        .box2{
+            height: 280px;
+            width: 283px;
+            background-color: black;
+            position: absolute;
+            top: 603px;
+            left: 381px;
+        }
+        .boxtext3{
+            position: absolute;
+            top: 634px;
+            left: 402.1px;
+            font-size: 20px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext4{
+            position: absolute;
+            top: 666px;
+            left: 402.1px;
+            font-size: 16px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+        .box3{
+            height: 280px;
+            width: 284px;
+            background-color: black;
+            position: absolute;
+            top: 603px;
+            left: 684px;
+        }
+        .boxtext5{
+            position: absolute;
+            top: 634px;
+            left: 705.6px;
+            font-size: 20px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext6{
+            position: absolute;
+            top: 690px;
+            left: 705.6px;
+            font-size: 16px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+        .box4{
+            height: 280px;
+            width: 284px;
+            background-color: black;
+            position: absolute;
+            top: 603px;
+            left: 988px;
+        }
+        .boxtext7{
+            position: absolute;
+            top: 634px;
+            left: 1008.9px;
+            font-size: 20px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext8{
+            position: absolute;
+            top: 690px;
+            left: 1008.9px;
+            font-size: 16px;
+            width: 240px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .box5{
+            height: 280px;
+            width: 284px;
+            background-color: black;
+            position: absolute;
+            top: 903px;
+            left: 77px;
+        }
+        .boxtext11{
+            position: absolute;
+            top: 934px;
+            left: 98.6px;
+            font-size: 20px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext12{
+            position: absolute;
+            top: 990px;
+            left: 98.6px;
+            font-size: 16px;
+            width: 240px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+        .box6{
+            height: 280px;
+            width: 283px;
+            background-color: black;
+            position: absolute;
+            top: 903px;
+            left: 381px;
+        }
+        .boxtext13{
+            position: absolute;
+            top: 934px;
+            left: 402px;
+            font-size: 20px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext14{
+            position: absolute;
+            top: 966px;
+            left: 402px;
+            font-size: 16px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+        .box7{
+            height: 280px;
+            width: 284px;
+            background-color: black;
+            position: absolute;
+            top: 903px;
+            left: 684px;
+        }
+        .boxtext15{
+            position: absolute;
+            top: 934px;
+            left: 705.6px;
+            font-size: 20px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext16{
+            position: absolute;
+            top: 990px;
+            left: 705.6px;
+            font-size: 16px;
+            width: 240px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+        .box8{
+            height: 280px;
+            width: 284px;
+            background-color: black;
+            position: absolute;
+            top: 903px;
+            left: 988px;
+        }
+        .boxtext17{
+            position: absolute;
+            top: 934px;
+            left: 1008.9px;
+            font-size: 20px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext18{
+            position: absolute;
+            top: 966px;
+            left: 1008.9px;
+            font-size: 16px;
+            width: 240px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .box9{
+            height: 280px;
+            width: 284px;
+            background-color: black;
+            position: absolute;
+            top: 1203px;
+            left: 77px;
+        }
+        .boxtext19{
+            position: absolute;
+            top: 1234px;
+            left: 98.6px;
+            font-size: 20px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext20{
+            position: absolute;
+            top: 1266px;
+            left: 98.6px;
+            font-size: 16px;
+            width: 240px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+        .box10{
+            height: 280px;
+            width: 283px;
+            background-color: black;
+            position: absolute;
+            top: 1203px;
+            left: 381px;
+        }
+        .boxtext21{
+            position: absolute;
+            top: 1234px;
+            left: 402px;
+            font-size: 20px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext22{
+            position: absolute;
+            top: 1266px;
+            left: 402px;
+            font-size: 16px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+        .box11{
+            height: 280px;
+            width: 284px;
+            background-color: black;
+            position: absolute;
+            top: 1203px;
+            left: 684px;
+        }
+        .boxtext23{
+            position: absolute;
+            top: 1234px;
+            left: 705.6px;
+            font-size: 20px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext24{
+            position: absolute;
+            top: 1266px;
+            left: 705.6px;
+            font-size: 16px;
+            width: 240px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+        .box12{
+            height: 280px;
+            width: 284px;
+            background-color: black;
+            position: absolute;
+            top: 1203px;
+            left: 988px;
+        }
+        .boxtext25{
+            position: absolute;
+            top: 1234px;
+            left: 1008.9px;
+            font-size: 20px;
+            width: 240px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext26{
+            position: absolute;
+            top: 1290px;
+            left: 1008.9px;
+            font-size: 16px;
+            width: 240px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .box13{
+            height: 280px;
+            width: 284px;
+            background-color: black;
+            position: absolute;
+            top: 1503px;
+            left: 77px;
+        }
+        .boxtext27{
+            position: absolute;
+            top: 1534px;
+            left: 98.6px;
+            font-size: 20px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext28{
+            position: absolute;
+            top: 1566px;
+            left: 98.6px;
+            font-size: 16px;
+            width: 240px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+        .box14{
+            height: 280px;
+            width: 283px;
+            background-color: black;
+            position: absolute;
+            top: 1503px;
+            left: 381px;
+        }
+        .boxtext29{
+            position: absolute;
+            top: 1534px;
+            left: 402px;
+            font-size: 20px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext30{
+            position: absolute;
+            top: 1566px;
+            left: 402px;
+            font-size: 16px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+        .box15{
+            height: 280px;
+            width: 284px;
+            background-color: black;
+            position: absolute;
+            top: 1503px;
+            left: 684px;
+        }
+        .boxtext31{
+            position: absolute;
+            top: 1534px;
+            left: 705.6px;
+            font-size: 20px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext32{
+            position: absolute;
+            top: 1566px;
+            left: 705.6px;
+            font-size: 16px;
+            width: 240px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+        .box16{
+            height: 280px;
+            width: 284px;
+            background-color: black;
+            position: absolute;
+            top: 1503px;
+            left: 988px;
+        }
+        .boxtext33{
+            position: absolute;
+            top: 1534px;
+            left: 1008.9px;
+            font-size: 20px;
+            width: 240px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext34{
+            position: absolute;
+            top: 1566px;
+            left: 1008.9px;
+            font-size: 16px;
+            width: 240px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .box17{
+            height: 280px;
+            width: 284px;
+            background-color: black;
+            position: absolute;
+            top: 1803px;
+            left: 77px;
+        }
+        .boxtext35{
+            position: absolute;
+            top: 1834px;
+            left: 98.6px;
+            font-size: 20px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext36{
+            position: absolute;
+            top: 1866px;
+            left: 98.6px;
+            font-size: 16px;
+            width: 240px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+        .box18{
+            height: 280px;
+            width: 283px;
+            background-color: black;
+            position: absolute;
+            top: 1803px;
+            left: 381px;
+        }
+        .boxtext37{
+            position: absolute;
+            top: 1834px;
+            left: 402px;
+            font-size: 20px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+        }
+        .boxtext38{
+            position: absolute;
+            top: 1866px;
+            left: 402px;
+            font-size: 16px;
+            width: 250px;
+            color: #e3e3e3;
+            line-height: 24px;
+
+        }
+
+        .black{
+            height: 466px;
+            width: 1349px;
+            background-color: black;
+            position: absolute;
+            top: 2257px;
+        }
+        .blackimg{
+            width: 90px;
+        }
+        .ul2{
+            position: absolute;
+            top: 83px;
+            left: -519px;
+            font-size: 13px;
+            padding-bottom: 15px;
+        }
+        .list1{
+            text-decoration: none;
+            color: white;
+        } 
+        .ul2 li{
+            display: flex;
+            padding-bottom: 21px;
+        }
+        .ul3{
+            position: absolute;
+            top: 101px;
+            left: -140px;
+            font-size: 13px;
+            padding-bottom: 15px;
+        }
+        .list2{
+            font-size: 16px;
+            color: white;
+        } 
+        .ul3 li{
+            display: flex;
+            padding-bottom: 21px;
+        }
+        .ul4{
+            position: absolute;
+            top: 101px;
+            left: 239px;
+            font-size: 13px;
+            padding-bottom: 15px;
+        }
+        .list3{
+            font-size: 16px;
+            color: white;
+        } 
+        .ul4 li{
+            display: flex;
+            padding-bottom: 21px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="javascript:void(0)"><img src="killercoda1.jpg" height="42px" width="121px" class="navimg"></a>
+        <a href="https://twitter.com/killercoda" target="_blank"><img src="twitter.png" height="15px" width="19px" class="navimg2"></a>
+        <a href="https://www.linkedin.com/company/killercoda/" target="_blank"><img src="linkedin.webp" height="17px" width="17px" class="navimg3"></a>
+        <a href="https://killercoda.com/slack" target="_blank"><img src="slack.png" height="25px" width="25px" class="navimg4"></a>
+        <span>
+            <ul>
+                <li><a href="javascript:void(0)" class="a">Areas</a></li>
+                <li><a href="javascript:void(0)" class="a">About</a></li>
+                <li><a href="javascript:void(0)" class="a">Pricing</a></li>
+                <li><a href="javascript:void(0)" class="a">Creators</a></li>
+                <li><a href="javascript:void(0)" class="a">Students</a></li>
+            </ul>
+        </span>
+        <button class="b">Login</button>
+    </nav>  
+    <div class="bgcolor">
+        <div class="maindiv">
+            <a href="javascript:void(0)"><div class="examples">
+                <b>Examples</b>
+            </div></a>
+            <div class="emptybase">
+                <b>What can Creators do on Killercoda?</b>
+            </div>
+            <div class="text">
+                Various examples showing what's possible for creators on Killercoda. <br>
+Repository: <a href="javascript:void(0)" class="links">https://github.com/killercoda/scenario-examples</a> <br>
+Documentation: <a href="javascript:void(0)" class="links">https://killercoda.com/creators</a> <br>
+Group scenarios into Courses: <a href="javascript:void(0)" class="links">https://killercoda.com/examples-courses</a> <br><br>
+<a href="javascript:void(0)" class="link">Github</a>
+            </div>
+        </div>
+    </div>
+
+    <a href="javascript:void(0)"><div class="box1"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext1">Code Actions</div></a>
+    <a href="javascript:void(0)"><div class="boxtext2">Let users copy or exec code blocks</div></a>
+
+    <a href="javascript:void(0)"><div class="box2"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext3">Code Snippets</div></a>
+    <a href="javascript:void(0)"><div class="boxtext4">Include code snippets of various languages</div></a>
+
+    <a href="javascript:void(0)"><div class="box3"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext5">Foreground Background Scripts</div></a>
+    <a href="javascript:void(0)"><div class="boxtext6">Execute code automatically in foreground and background</div></a>
+
+    <a href="javascript:void(0)"><div class="box4"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext7">Foreground Background Scripts Multi Steps</div></a>
+    <a href="javascript:void(0)"><div class="boxtext8">Multiple steps can have foreground and background scripts</div></a>
+
+    <a href="javascript:void(0)"><div class="box5"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext11">Foreground Background Scripts Multi Steps (IDE)</div></a>
+    <a href="javascript:void(0)"><div class="boxtext12">Multiple steps can have foreground and background scripts</div></a>
+
+    <a href="javascript:void(0)"><div class="box6"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext13">Kubernetes 1node</div></a>
+    <a href="javascript:void(0)"><div class="boxtext14">Use a simple one node Kubernetes cluster and let user list all pods</div></a>
+
+    <a href="javascript:void(0)"><div class="box7"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext15">Kubernetes 2node multi-step verification</div></a>
+    <a href="javascript:void(0)"><div class="boxtext16">Uses a two node Kubernetes cluster and performs user input verification in all steps</div></a>
+
+    <a href="javascript:void(0)"><div class="box8"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext17">Kubernetes Dashboard</div></a>
+    <a href="javascript:void(0)"><div class="boxtext18">Run and access the Kubernetes Dashboard</div></a>
+
+    <a href="javascript:void(0)"><div class="box9"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext19">Kubernetes Volumes</div></a>
+    <a href="javascript:void(0)"><div class="boxtext20">How to use PV/PVC volumes in Kubernetes environments</div></a>
+
+    <a href="javascript:void(0)"><div class="box10"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext21">Learning Linux</div></a>
+    <a href="javascript:void(0)"><div class="boxtext22"></div></a>
+
+    <a href="javascript:void(0)"><div class="box11"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext23">Network Traffic</div></a>
+    <a href="javascript:void(0)"><div class="boxtext24">Access services running inside an environment</div></a>
+
+    <a href="javascript:void(0)"><div class="box12"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext25">Network Traffic Kubernetes</div></a>
+    <a href="javascript:void(0)"><div class="boxtext26">Access services running inside a Kubernetes environment</div></a>
+
+    <a href="javascript:void(0)"><div class="box13"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext27">Theia IDE Visual Editor</div></a>
+    <a href="javascript:void(0)"><div class="boxtext28">Select the Theia IDE as default interface</div></a>
+
+    <a href="javascript:void(0)"><div class="box14"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext29">Ubuntu Custom Content</div></a>
+    <a href="javascript:void(0)"><div class="boxtext30">Write custom markdown for all phases</div></a>
+
+    <a href="javascript:void(0)"><div class="box15"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext31">Ubuntu simple</div></a>
+    <a href="javascript:void(0)"><div class="boxtext32"></div></a>
+
+    <a href="javascript:void(0)"><div class="box16"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext33">Upload Assets</div></a>
+    <a href="javascript:void(0)"><div class="boxtext34">Upload files as assets to a specific location</div></a>
+
+    <a href="javascript:void(0)"><div class="box17"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext35">Use Images</div></a>
+    <a href="javascript:void(0)"><div class="boxtext36">Display images in Markdown</div></a>
+
+    <a href="javascript:void(0)"><div class="box18"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext37">Verification</div></a>
+    <a href="javascript:void(0)"><div class="boxtext38">Verify user input</div></a>
+
+    <div class="black">
+        <ul class="ul2">
+            <li><a href="javascript:void(0)"><img src="killercoda2.svg" class="blackimg"></a></li><br><br>
+            <li><a href="javascript:void(0)" class="list1">About</a></li>
+            <li><a href="javascript:void(0)" class="list1">Explore</a></li>
+            <li><a href="javascript:void(0)" class="list1">Learn Kubernetes Security</a></li></a>
+            <li><a href="javascript:void(0)" class="list1">Creators</a></li>
+            <li><a href="javascript:void(0)" class="list1">Students</a></li>
+            <li><a href="javascript:void(0)" class="list1">Contribute</a></li>
+            <li><a href="javascript:void(0)" class="list1">Legal / Privacy</a></li></a>
+        </ul>
+        <ul class="ul3">
+            <li class="list2">CONTENT</li><br><br>
+            <li><a href="javascript:void(0)" class="list1">PLUS</a></li>
+            <li><a href="javascript:void(0)" class="list1">FAQ</a></li>
+            <li><a href="javascript:void(0)" class="list1">Support</a></li></a>
+            <li><a href="javascript:void(0)" class="list1">Business Contact</a></li>
+            <li><a href="javascript:void(0)" class="list1">Pricing</a></li>
+            <li><a href="javascript:void(0)" class="list1">Media / Press</a></li>
+            <li><a href="javascript:void(0)" class="list1">We vs Killer Shell</a></li></a>
+            <li><a href="javascript:void(0)" class="list1">Bug Bounty</a></li></a>
+        </ul>
+        <ul class="ul4">
+            <li class="list3">LINKS</li><br><br>
+            <li><a href="javascript:void(0)" class="list1">Killer Shell</a></li>
+            <li><a href="https://twitter.com/killercoda" target="_blank"><img src="twitter.png" height="15px" width="19px"></a></li>
+            <li><a href="https://www.linkedin.com/company/killercoda/" target="_blank"><img src="linkedin.webp" height="17px" width="17px"></a></li></a>
+            <li><a href="https://killercoda.com/slack" target="_blank"><img src="slack.png" height="25px" width="25px"></a></li>
+        </ul>
+
+    </div>
+    
+</body>
+</html>

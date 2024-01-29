@@ -1,0 +1,3287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Killercoda.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            font-family: 'Outfit', sans-serif;
+        }
+        nav{
+            height: 65px;
+            background-color: black;
+        }
+        .navimg{
+            margin-left: 113px;
+            margin-top: 12px;
+        }
+        .navimg2{
+            margin-left: 52px;
+            margin-bottom: 13px;
+        }
+        .navimg3{
+            margin-left: 10px;
+            margin-bottom: 12px;
+        }
+        .navimg4{
+            margin-left: 6px;
+            margin-bottom: 8px;
+        }
+        li{
+            font-family: 'Outfit', sans-serif;
+            display: inline;
+            margin-left: 44px;
+            
+        }
+        .a{
+            text-decoration: none;
+            color: #f5f5f5;
+            font-size: 15.5px;
+            letter-spacing: 0.4px;
+        }
+        ul{
+            margin-left: 555px;
+            margin-top: -35px;
+        }
+        .b{
+            font-family: 'Outfit', sans-serif;
+            height: 44px;
+            font-size: 16px;
+            width: 90px;
+            position: absolute;
+            left: 1120px;
+            top: -1px;
+            top: 10px;
+            border: 3px solid grey;
+            cursor: pointer;
+            
+        }
+        .c{
+            font-family: 'Outfit', sans-serif;
+            font-size: 24px;
+            color: rgb(80, 80, 80);
+            position: absolute;
+            top: 160px;
+            left: 135px;
+        }
+        .searchbar1{
+            height: 38px;
+            width: 200px;
+           position: absolute;
+           left: 975px;
+           top: 161px;
+           border: 1px solid rgb(200, 200, 200);
+           font-size: 16px;
+           padding-left: 11.7px;
+        }
+        .box1{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            position: absolute;
+            top: 225px;
+            left: 135px;
+        }
+        .playgrounds{
+            position: absolute;
+            top: 244px;
+            left: 179px;
+            color: #f5f5f5;
+            font-size: 20px;
+        }
+        .boximg1{
+            height: 30px;
+            width: 90px;
+            position: absolute;
+            top: 319px;
+            left: 190px;
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            position: absolute;
+            top: 225px;
+            left: 345px;
+        }
+        .examples{
+            position: absolute;
+            top: 244px;
+            left: 402px;
+            color: #f5f5f5;
+            font-size: 20px;
+        }
+        .boximg2{
+            height: 30px;
+            width: 90px;
+            position: absolute;
+            top: 319px;
+            left: 400px;
+        }
+        .box3{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 225px;
+            left: 555px;
+        }
+        .ckscertification{
+            position: absolute;
+            top: 374px;
+            left: 606px;
+            color: rgb(70, 70, 70);
+            font-size: 12.8px;
+        }
+        .boximg3{
+            height: 125px;
+            width: 110px;
+            position: absolute;
+            top: 253px;
+            left: 600px;
+        }
+        .box4{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 225px;
+            left: 765px;
+        }
+        .ckacertification{
+            position: absolute;
+            top: 375px;
+            left: 815px;
+            color: rgb(70, 70, 70);
+            font-size: 12.8px;
+        }
+        .boximg4{
+            height: 125px;
+            width: 110px;
+            position: absolute;
+            top: 253px;
+            left: 810px;
+        }
+        .box5{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 225px;
+            left: 975px;
+        }
+        .ckadcertification{
+            position: absolute;
+            top: 375px;
+            left: 1020px;
+            color: rgb(70, 70, 70);
+            font-size: 12.8px;
+        }
+        .boximg5{
+            height: 125px;
+            width: 110px;
+            position: absolute;
+            top: 253px;
+            left: 1020px;
+        }
+        .box6{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 435px;
+            left: 135px;
+        }
+        .boximg6{
+            height: 44px;
+            width: 130px;
+            position: absolute;
+            top: 517px;
+            left: 170px;
+        }
+        .box7{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 435px;
+            left: 345px;
+        }
+        .boximg7{
+            height: 37px;
+            width: 110px;
+            position: absolute;
+            top: 520px;
+            left: 390px;
+        }
+        .box8{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 435px;
+            left: 555px;
+        }
+        .git{
+            position: absolute;
+            top: 572px;
+            left: 609px;
+            color: rgb(70, 70, 70);
+            font-size: 12.8px;
+        }
+        .boximg8{
+            height: 25px;
+            width: 110px;
+            position: absolute;
+            top: 528px;
+            left: 600px;
+        }
+        .box9{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 435px;
+            left: 765px;
+        }
+        .linux{
+            position: absolute;
+            top: 572px;
+            left: 818px;
+            color: rgb(70, 70, 70);
+            font-size: 12.8px;
+        }
+        .boximg9{
+            height: 55px;
+            width: 110px;
+            position: absolute;
+            top: 513px;
+            left: 810px;
+        }
+        .box10{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 435px;
+            left: 975px;
+        }
+        .lfcs{
+            position: absolute;
+            top: 578px;
+            left: 1023px;
+            color: rgb(70, 70, 70);
+            font-size: 12.8px;
+        }
+        .boximg10{
+            height: 80px;
+            width: 80px;
+            position: absolute;
+            top: 493px;
+            left: 1035px;
+        }
+        .box11{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 645px;
+            left: 135px;
+        }
+        .boximg11{
+            
+            width: 180px;
+            position: absolute;
+            top: 730px;
+            left: 147px;
+        }
+        .box12{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 645px;
+            left: 345px;
+        }
+        .argo{
+            position: absolute;
+            top: 780px;
+            left: 378px;
+            color: rgb(70, 70, 70);
+            font-size: 12px;
+            letter-spacing: 0.4px;
+        }
+        .boximg12{
+        
+            width: 90px;
+            position: absolute;
+            top: 725px;
+            left: 400px;
+        }
+        .box13{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 645px;
+            left: 555px;
+        }
+        .flux{
+            position: absolute;
+            top: 780px;
+            left: 585px;
+            color: rgb(70, 70, 70);
+            font-size: 12px;
+            letter-spacing: 0.4px;
+        }
+        .boximg13{
+        
+            width: 80px;
+            position: absolute;
+            top: 723px;
+            left: 615px;
+        }
+        .box14{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 645px;
+            left: 765px;
+        }
+        .ansible{
+            position: absolute;
+            top: 779px;
+            left: 810px;
+            color: rgb(70, 70, 70);
+            font-size: 12px;
+            letter-spacing: 0.4px;
+        }
+        .boximg14{
+        
+            width: 110px;
+            position: absolute;
+            top: 718px;
+            left: 810px;
+        }
+        .box15{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 645px;
+            left: 975px;
+        }
+        .hashicorp{
+            position: absolute;
+            top: 779px;
+            left: 1020px;
+            color: rgb(70, 70, 70);
+            font-size: 12px;
+            letter-spacing: 0.4px;
+        }
+        .boximg15{
+        
+            width: 110px;
+            position: absolute;
+            top: 732px;
+            left: 1020px;
+        }
+        .box16{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 855px;
+            left: 135px;
+        }
+        .opentofu{
+            position: absolute;
+            top: 989px;
+            left: 185px;
+            color: rgb(70, 70, 70);
+            font-size: 12px;
+            letter-spacing: 0.4px;
+        }
+        .boximg16{
+        
+            width: 110px;
+            position: absolute;
+            top: 935px;
+            left: 180px;
+        }
+        .box17{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 855px;
+            left: 345px;
+        }
+        .boximg17{
+        
+            width: 110px;
+            position: absolute;
+            top: 940px;
+            left: 390px;
+        }
+        .box18{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 855px;
+            left: 555px;
+        }
+        .boximg18{
+        
+            width: 110px;
+            position: absolute;
+            top: 945px;
+            left: 600px;
+        }
+        .box19{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 855px;
+            left: 765px;
+        }
+        .boximg19{
+        
+            width: 130px;
+            position: absolute;
+            top: 940px;
+            left: 800px;
+        }
+        .box20{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 855px;
+            left: 975px;
+        }
+        .boximg20{
+        
+            width: 140px;
+            position: absolute;
+            top: 948px;
+            left: 1005px;
+        }
+        .box21{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1065px;
+            left: 135px;
+        }
+        .boximg21{
+        
+            width: 130px;
+            position: absolute;
+            top: 1150px;
+            left: 170px;
+        }
+        .box22{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1065px;
+            left: 345px;
+        }
+        .boximg22{
+        
+            width: 80px;
+            position: absolute;
+            top: 1145px;
+            left: 405px;
+        }
+        .box23{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1065px;
+            left: 555px;
+        }
+        .ica{
+            position: absolute;
+            top: 1215px;
+            left: 607px;
+            color: rgb(70, 70, 70);
+            font-size: 12px;
+            letter-spacing: 0.4px;
+        }
+        .boximg23{
+        
+            width: 80px;
+            position: absolute;
+            top: 1128px;
+            left: 615px;
+        }
+        .box24{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1065px;
+            left: 765px;
+        }
+        .boximg24{
+        
+            width: 120px;
+            position: absolute;
+            top: 1152px;
+            left: 805px;
+        }
+        .box25{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1065px;
+            left: 975px;
+        }
+        .nginx{
+            position: absolute;
+            top: 1204px;
+            left: 1050px;
+            color: black;
+            font-size: 15px;
+            letter-spacing: 0.4px;
+        }
+        .boximg25{
+        
+            width: 100px;
+            position: absolute;
+            top: 1150px;
+            left: 1025px;
+        }
+        .box26{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1275px;
+            left: 135px;
+        }
+        .boximg26{
+        
+            width: 160px;
+            position: absolute;
+            top: 1355px;
+            left: 155px;
+        }
+        .box27{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1275px;
+            left: 345px;
+        }
+        .boximg27{
+        
+            width: 80px;
+            position: absolute;
+            top: 1363px;
+            left: 405px;
+        }
+        .box28{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1275px;
+            left: 555px;
+        }
+        .vim{
+            position: absolute;
+            top: 1413px;
+            left: 604px;
+            color: rgb(70, 70, 70);
+            font-size: 12px;
+            letter-spacing: 0.4px;
+        }
+        .boximg28{
+        
+            width: 40px;
+            position: absolute;
+            top: 1360px;
+            left: 635px;
+        }
+        .box29{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1275px;
+            left: 765px;
+        }
+        .boximg29{
+        
+            width: 140px;
+            position: absolute;
+            top: 1368px;
+            left: 795px;
+        }
+        .box30{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1275px;
+            left: 975px;
+        }
+        .boximg30{
+        
+            width: 70px;
+            position: absolute;
+            top: 1344px;
+            left: 1040px;
+        }
+        .box31{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1485px;
+            left: 135px;
+        }
+        .boximg31{
+        
+            width: 90px;
+            position: absolute;
+            top: 1566px;
+            left: 190px;
+        }
+        .box32{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1485px;
+            left: 345px;
+        }
+        .boximg32{
+        
+            width: 120px;
+            position: absolute;
+            top: 1571px;
+            left: 385px;
+        }
+        .box33{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1485px;
+            left: 555px;
+        }
+        .boximg33{
+        
+            width: 140px;
+            position: absolute;
+            top: 1569px;
+            left: 585px;
+        }
+        .box34{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1485px;
+            left: 765px;
+        }
+        .boximg34{
+        
+            width: 120px;
+            position: absolute;
+            top: 1560px;
+            left: 805px;
+        }
+        .box35{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1485px;
+            left: 975px;
+        }
+        .boximg35{
+        
+            width: 150px;
+            position: absolute;
+            top: 1569px;
+            left: 1000px;
+        }
+        .box36{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1695px;
+            left: 135px;
+        }
+        .boximg36{
+        
+            width: 80px;
+            position: absolute;
+            top: 1778px;
+            left: 195px;
+        }
+        .box37{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1695px;
+            left: 345px;
+        }
+        .boximg37{
+        
+            width: 130px;
+            position: absolute;
+            top: 1778px;
+            left: 380px;
+        }
+        .box38{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1695px;
+            left: 555px;
+        }
+        .boximg38{
+        
+            width: 150px;
+            position: absolute;
+            top: 1770px;
+            left: 580px;
+        }
+        .box39{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1695px;
+            left: 765px;
+        }
+        .boximg39{
+        
+            width: 140px;
+            position: absolute;
+            top: 1776px;
+            left: 795px;
+        }
+        .box40{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1695px;
+            left: 975px;
+        }
+        .boximg40{
+        
+            width: 160px;
+            position: absolute;
+            top: 1753px;
+            left: 995px;
+        }
+        .box41{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1905px;
+            left: 135px;
+        }
+        .boximg41{
+        
+            width: 100px;
+            position: absolute;
+            top: 1988px;
+            left: 185px;
+        }
+        .box42{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1905px;
+            left: 345px;
+        }
+        .cyberark{
+            position: absolute;
+            top: 2044px;
+            left: 395px;
+            color: rgb(70, 70, 70);
+            font-size: 12.8px;
+        }
+        .boximg42{
+        
+            width: 110px;
+            position: absolute;
+            top: 1978px;
+            left: 390px;
+        }
+        .box43{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1905px;
+            left: 555px;
+        }
+        .boximg43{
+        
+            width: 130px;
+            position: absolute;
+            top: 1975px;
+            left: 590px;
+        }
+        .box44{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1905px;
+            left: 765px;
+        }
+        .boximg44{
+        
+            width: 100px;
+            position: absolute;
+            top: 1995px;
+            left: 815px;
+        }
+        .box45{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 1905px;
+            left: 975px;
+        }
+        .boximg45{
+        
+            width: 160px;
+            position: absolute;
+            top: 1985px;
+            left: 1005px;
+        }
+        .box46{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 2115px;
+            left: 135px;
+        }
+        .boximg46{
+        
+            width: 120px;
+            position: absolute;
+            top: 2205px;
+            left: 175px;
+        }
+        .box47{
+            height: 198px;
+            width: 198px;
+            border: 1px solid #cecece;
+            position: absolute;
+            top: 2115px;
+            left: 345px;
+        }
+        .boximg47{
+            font-size: 50px;
+            color: #aaaaaa;
+            position: absolute;
+            top: 2180px;
+            left: 430px;
+        }
+        .searchbar2{
+            height: 38px;
+            width: 200px;
+           position: absolute;
+           left: 975px;
+           top: 2363px;
+           border: 1px solid rgb(200, 200, 200);
+           font-size: 16px;
+           padding-left: 11.7px;
+        }
+        .d{
+            font-family: 'Outfit', sans-serif;
+            font-size: 24px;
+            color: rgb(80, 80, 80);
+            position: absolute;
+            left: 134.4px;
+            top: 2362px;
+        }
+        .box48{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 2428px;
+            left: 135px;
+        }
+        .boxtext1{
+            position: absolute;
+            top: 2447px;
+            left: 154.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext2{
+            position: absolute;
+            top: 2527px;
+            left: 154.6px;
+            font-size: 16px;
+            width: 150px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box49{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 2428px;
+            left: 345px;
+        }
+        .boxtext3{
+            position: absolute;
+            top: 2447px;
+            left: 364.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext4{
+            position: absolute;
+            top: 2479px;
+            left: 364.6px;
+            font-size: 16px;
+            width: 150px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box50{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 2428px;
+            left: 555px;
+        }
+        .boxtext5{
+            position: absolute;
+            top: 2447px;
+            left: 574.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext6{
+            position: absolute;
+            top: 2479px;
+            left: 574.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box51{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 2428px;
+            left: 765px;
+        }
+        .boxtext7{
+            position: absolute;
+            top: 2447px;
+            left: 784.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext8{
+            position: absolute;
+            top: 2479px;
+            left: 784.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box52{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 2428px;
+            left: 975px;
+        }
+        .boxtext9{
+            position: absolute;
+            top: 2447px;
+            left: 994.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext10{
+            position: absolute;
+            top: 2479px;
+            left: 994.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box53{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 2638px;
+            left: 135px;
+        }
+        .boxtext11{
+            position: absolute;
+            top: 2657px;
+            left: 154.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext12{
+            position: absolute;
+            top: 2713px;
+            left: 154.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box54{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 2638px;
+            left: 345px;
+        }
+        .boxtext13{
+            position: absolute;
+            top: 2657px;
+            left: 364.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext14{
+            position: absolute;
+            top: 2689px;
+            left: 364.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box55{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 2638px;
+            left: 555px;
+        }
+        .boxtext15{
+            position: absolute;
+            top: 2657px;
+            left: 574.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext16{
+            position: absolute;
+            top: 2689px;
+            left: 574.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box56{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 2638px;
+            left: 765px;
+        }
+        .boxtext17{
+            position: absolute;
+            top: 2657px;
+            left: 784.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext18{
+            position: absolute;
+            top: 2689px;
+            left: 784.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box57{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 2638px;
+            left: 975px;
+        }
+        .boxtext19{
+            position: absolute;
+            top: 2657px;
+            left: 994.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext20{
+            position: absolute;
+            top: 2713px;
+            left: 994.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box58{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 2848px;
+            left: 135px;
+        }
+        .boxtext21{
+            position: absolute;
+            top: 2867px;
+            left: 154.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext22{
+            position: absolute;
+            top: 2900px;
+            left: 154.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box59{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 2848px;
+            left: 345px;
+        }
+        .boxtext23{
+            position: absolute;
+            top: 2867px;
+            left: 364.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext24{
+            position: absolute;
+            top: 2899px;
+            left: 364.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box60{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 2848px;
+            left: 555px;
+        }
+        .boxtext25{
+            position: absolute;
+            top: 2867px;
+            left: 574.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext26{
+            position: absolute;
+            top: 2899px;
+            left: 574.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box61{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 2848px;
+            left: 765px;
+        }
+        .boxtext27{
+            position: absolute;
+            top: 2867px;
+            left: 784.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext28{
+            position: absolute;
+            top: 2899px;
+            left: 784.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box62{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 2848px;
+            left: 975px;
+        }
+        .boxtext29{
+            position: absolute;
+            top: 2867px;
+            left: 994.6px;
+            font-size: 20px;
+            width: 150px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext30{
+            position: absolute;
+            top: 2948px;
+            left: 994.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box63{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 3058px;
+            left: 135px;
+        }
+        .boxtext31{
+            position: absolute;
+            top: 3077px;
+            left: 154.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext32{
+            position: absolute;
+            top: 3109px;
+            left: 154.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box64{
+            height: 198px;
+            width: 198px;
+            border: 1px solid #cecece;
+            position: absolute;
+            top: 3058px;
+            left: 345px;
+        }
+        .boxplus2{
+            font-size: 50px;
+            color: #aaaaaa;
+            position: absolute;
+            top: 3122px;
+            left: 429px;
+        }
+        .searchbar3{
+            height: 38px;
+            width: 200px;
+           position: absolute;
+           left: 975px;
+           top: 3306px;
+           border: 1px solid rgb(200, 200, 200);
+           font-size: 16px;
+           padding-left: 11.7px;
+        }
+        .e{
+            font-family: 'Outfit', sans-serif;
+            font-size: 24px;
+            color: rgb(80, 80, 80);
+            position: absolute;
+            left: 134.4px;
+            top: 3305px;
+        }
+        .box65{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 3371px;
+            left: 135px;
+        }
+        .boxtext33{
+            position: absolute;
+            top: 3390px;
+            left: 154.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext34{
+            position: absolute;
+            top: 3422px;
+            left: 154.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box66{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 3371px;
+            left: 345px;
+        }
+        .boxtext35{
+            position: absolute;
+            top: 3390px;
+            left: 364.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext36{
+            position: absolute;
+            top: 3423px;
+            left: 364.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box67{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 3371px;
+            left: 555px;
+        }
+        .boxtext37{
+            position: absolute;
+            top: 3390px;
+            left: 574.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext38{
+            position: absolute;
+            top: 3422px;
+            left: 574.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box68{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 3371px;
+            left: 765px;
+        }
+        .boxtext39{
+            position: absolute;
+            top: 3390px;
+            left: 784.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext40{
+            position: absolute;
+            top: 3422px;
+            left: 784.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box69{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 3371px;
+            left: 975px;
+        }
+        .boxtext41{
+            position: absolute;
+            top: 3390px;
+            left: 994.6px;
+            font-size: 20px;
+            width: 150px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext42{
+            position: absolute;
+            top: 3446px;
+            left: 994.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box70{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 3581px;
+            left: 135px;
+        }
+        .boxtext43{
+            position: absolute;
+            top: 3600px;
+            left: 154.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext44{
+            position: absolute;
+            top: 3633px;
+            left: 154.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box71{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 3581px;
+            left: 345px;
+        }
+        .boxtext45{
+            position: absolute;
+            top: 3600px;
+            left: 364.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext46{
+            position: absolute;
+            top: 3633px;
+            left: 364.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box72{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 3581px;
+            left: 555px;
+        }
+        .boxtext47{
+            position: absolute;
+            top: 3600px;
+            left: 574.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext48{
+            position: absolute;
+            top: 3656px;
+            left: 574.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box73{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 3581px;
+            left: 765px;
+        }
+        .boxtext49{
+            position: absolute;
+            top: 3600px;
+            left: 784.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext50{
+            position: absolute;
+            top: 3656px;
+            left: 784.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box74{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 3581px;
+            left: 975px;
+        }
+        .boxtext51{
+            position: absolute;
+            top: 3600px;
+            left: 994.6px;
+            font-size: 20px;
+            width: 150px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext52{
+            position: absolute;
+            top: 3632px;
+            left: 994.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box75{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 3791px;
+            left: 135px;
+        }
+        .boxtext53{
+            position: absolute;
+            top: 3810px;
+            left: 154.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext54{
+            position: absolute;
+            top: 3866px;
+            left: 154.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box76{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 3791px;
+            left: 345px;
+        }
+        .boxtext55{
+            position: absolute;
+            top: 3810px;
+            left: 364.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext56{
+            position: absolute;
+            top: 3866px;
+            left: 364.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box77{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 3791px;
+            left: 555px;
+        }
+        .boxtext57{
+            position: absolute;
+            top: 3810px;
+            left: 574.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext58{
+            position: absolute;
+            top: 3866px;
+            left: 574.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box78{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 3791px;
+            left: 765px;
+        }
+        .boxtext59{
+            position: absolute;
+            top: 3810px;
+            left: 784.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext60{
+            position: absolute;
+            top: 3866px;
+            left: 784.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box79{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 3791px;
+            left: 975px;
+        }
+        .boxtext61{
+            position: absolute;
+            top: 3810px;
+            left: 994.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext62{
+            position: absolute;
+            top: 3866px;
+            left: 994.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box80{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4001px;
+            left: 135px;
+        }
+        .boxtext63{
+            position: absolute;
+            top: 4020px;
+            left: 154.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext64{
+            position: absolute;
+            top: 4053px;
+            left: 154.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box81{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4001px;
+            left: 345px;
+        }
+        .boxtext65{
+            position: absolute;
+            top: 4020px;
+            left: 364.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext66{
+            position: absolute;
+            top: 4052px;
+            left: 364.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box82{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4001px;
+            left: 555px;
+        }
+        .boxtext67{
+            position: absolute;
+            top: 4020px;
+            left: 574.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext68{
+            position: absolute;
+            top: 4052px;
+            left: 574.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box83{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4001px;
+            left: 765px;
+        }
+        .boxtext69{
+            position: absolute;
+            top: 4020px;
+            left: 784.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext70{
+            position: absolute;
+            top: 4076px;
+            left: 784.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box84{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4001px;
+            left: 975px;
+        }
+        .boxtext71{
+            position: absolute;
+            top: 4020px;
+            left: 994.6px;
+            font-size: 20px;
+            width: 150px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext72{
+            position: absolute;
+            top: 4052px;
+            left: 994.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box85{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4211px;
+            left: 135px;
+        }
+        .boxtext73{
+            position: absolute;
+            top: 4230px;
+            left: 154.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext74{
+            position: absolute;
+            top: 4263px;
+            left: 154.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box86{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4211px;
+            left: 345px;
+        }
+        .boxtext75{
+            position: absolute;
+            top: 4230px;
+            left: 364.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext76{
+            position: absolute;
+            top: 4262px;
+            left: 364.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box87{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4211px;
+            left: 555px;
+        }
+        .boxtext77{
+            position: absolute;
+            top: 4230px;
+            left: 574.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext78{
+            position: absolute;
+            top: 4262px;
+            left: 574.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box88{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4211px;
+            left: 765px;
+        }
+        .boxtext79{
+            position: absolute;
+            top: 4230px;
+            left: 784.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext80{
+            position: absolute;
+            top: 4262px;
+            left: 784.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box89{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4211px;
+            left: 975px;
+        }
+        .boxtext81{
+            position: absolute;
+            top: 4230px;
+            left: 994.6px;
+            font-size: 20px;
+            width: 150px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext82{
+            position: absolute;
+            top: 4286px;
+            left: 994.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box90{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4421px;
+            left: 135px;
+        }
+        .boxtext83{
+            position: absolute;
+            top: 4440px;
+            left: 154.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext84{
+            position: absolute;
+            top: 4496px;
+            left: 154.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box91{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4421px;
+            left: 345px;
+        }
+        .boxtext85{
+            position: absolute;
+            top: 4440px;
+            left: 364.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext86{
+            position: absolute;
+            top: 4496px;
+            left: 364.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box92{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4421px;
+            left: 555px;
+        }
+        .boxtext87{
+            position: absolute;
+            top: 4440px;
+            left: 574.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext88{
+            position: absolute;
+            top: 4496px;
+            left: 574.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box93{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4421px;
+            left: 765px;
+        }
+        .boxtext89{
+            position: absolute;
+            top: 4440px;
+            left: 784.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext90{
+            position: absolute;
+            top: 4496px;
+            left: 784.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box94{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4421px;
+            left: 975px;
+        }
+        .boxtext91{
+            position: absolute;
+            top: 4440px;
+            left: 994.6px;
+            font-size: 20px;
+            width: 150px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext92{
+            position: absolute;
+            top: 4472px;
+            left: 994.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box95{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4631px;
+            left: 135px;
+        }
+        .boxtext93{
+            position: absolute;
+            top: 4650px;
+            left: 154.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext94{
+            position: absolute;
+            top: 4706px;
+            left: 154.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box96{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4631px;
+            left: 345px;
+        }
+        .boxtext95{
+            position: absolute;
+            top: 4650px;
+            left: 364.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext96{
+            position: absolute;
+            top: 4682px;
+            left: 364.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box97{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4631px;
+            left: 555px;
+        }
+        .boxtext97{
+            position: absolute;
+            top: 4650px;
+            left: 574.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext98{
+            position: absolute;
+            top: 4706px;
+            left: 574.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box98{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4631px;
+            left: 765px;
+        }
+        .boxtext99{
+            position: absolute;
+            top: 4650px;
+            left: 784.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext100{
+            position: absolute;
+            top: 4682px;
+            left: 784.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box99{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4631px;
+            left: 975px;
+        }
+        .boxtext101{
+            position: absolute;
+            top: 4650px;
+            left: 994.6px;
+            font-size: 20px;
+            width: 150px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext102{
+            position: absolute;
+            top: 4682px;
+            left: 994.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box100{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4841px;
+            left: 135px;
+        }
+        .boxtext103{
+            position: absolute;
+            top: 4860px;
+            left: 154.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext104{
+            position: absolute;
+            top: 4916px;
+            left: 154.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box101{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4841px;
+            left: 345px;
+        }
+        .boxtext105{
+            position: absolute;
+            top: 4860px;
+            left: 364.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext106{
+            position: absolute;
+            top: 4892px;
+            left: 364.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box102{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4841px;
+            left: 555px;
+        }
+        .boxtext107{
+            position: absolute;
+            top: 4860px;
+            left: 574.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext108{
+            position: absolute;
+            top: 4916px;
+            left: 574.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box103{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4841px;
+            left: 765px;
+        }
+        .boxtext109{
+            position: absolute;
+            top: 4860px;
+            left: 784.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext110{
+            position: absolute;
+            top: 4892px;
+            left: 784.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box104{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 4841px;
+            left: 975px;
+        }
+        .boxtext111{
+            position: absolute;
+            top: 4860px;
+            left: 994.6px;
+            font-size: 20px;
+            width: 150px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext112{
+            position: absolute;
+            top: 4892px;
+            left: 994.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box105{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 5051px;
+            left: 135px;
+        }
+        .boxtext113{
+            position: absolute;
+            top: 5070px;
+            left: 154.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext114{
+            position: absolute;
+            top: 5102px;
+            left: 154.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box106{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 5051px;
+            left: 345px;
+        }
+        .boxtext115{
+            position: absolute;
+            top: 5070px;
+            left: 364.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext116{
+            position: absolute;
+            top: 5002px;
+            left: 364.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box107{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 5051px;
+            left: 555px;
+        }
+        .boxtext117{
+            position: absolute;
+            top: 5070px;
+            left: 574.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext118{
+            position: absolute;
+            top: 5126px;
+            left: 574.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box108{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 5051px;
+            left: 765px;
+        }
+        .boxtext119{
+            position: absolute;
+            top: 5070px;
+            left: 784.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext120{
+            position: absolute;
+            top: 5102px;
+            left: 784.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box109{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 5051px;
+            left: 975px;
+        }
+        .boxtext121{
+            position: absolute;
+            top: 5070px;
+            left: 994.6px;
+            font-size: 20px;
+            width: 150px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext122{
+            position: absolute;
+            top: 5002px;
+            left: 994.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+
+        .box110{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 5261px;
+            left: 135px;
+        }
+        .boxtext123{
+            position: absolute;
+            top: 5280px;
+            left: 154.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext124{
+            position: absolute;
+            top: 5336px;
+            left: 154.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box111{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 5261px;
+            left: 345px;
+        }
+        .boxtext125{
+            position: absolute;
+            top: 5280px;
+            left: 364.6px;
+            font-size: 20px;
+            width: 180px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext126{
+            position: absolute;
+            top: 5212px;
+            left: 364.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box112{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 5261px;
+            left: 555px;
+        }
+        .boxtext127{
+            position: absolute;
+            top: 5280px;
+            left: 574.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext128{
+            position: absolute;
+            top: 5336px;
+            left: 574.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+
+        }
+        .box113{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 5261px;
+            left: 765px;
+        }
+        .boxtext129{
+            position: absolute;
+            top: 5280px;
+            left: 784.6px;
+            font-size: 20px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext130{
+            position: absolute;
+            top: 5360px;
+            left: 784.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .box114{
+            height: 200px;
+            width: 200px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 5261px;
+            left: 975px;
+        }
+        .boxtext131{
+            position: absolute;
+            top: 5280px;
+            left: 994.6px;
+            font-size: 20px;
+            width: 150px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .boxtext132{
+            position: absolute;
+            top: 5212px;
+            left: 994.6px;
+            font-size: 16px;
+            width: 160px;
+            color: rgb(55, 55, 55);
+            line-height: 24px;
+        }
+        .black{
+            height: 466px;
+            width: 1349px;
+            background-color: black;
+            position: absolute;
+            top: 5621px;
+        }
+        .blackimg{
+            width: 90px;
+        }
+        .ul2{
+            position: absolute;
+            top: 83px;
+            left: -519px;
+            font-size: 13px;
+            padding-bottom: 15px;
+        }
+        .list1{
+            text-decoration: none;
+            color: white;
+        } 
+        .ul2 li{
+            display: flex;
+            padding-bottom: 21px;
+        }
+        .ul3{
+            position: absolute;
+            top: 101px;
+            left: -140px;
+            font-size: 13px;
+            padding-bottom: 15px;
+        }
+        .list2{
+            font-size: 16px;
+            color: white;
+        } 
+        .ul3 li{
+            display: flex;
+            padding-bottom: 21px;
+        }
+        .ul4{
+            position: absolute;
+            top: 101px;
+            left: 239px;
+            font-size: 13px;
+            padding-bottom: 15px;
+        }
+        .list3{
+            font-size: 16px;
+            color: white;
+        } 
+        .ul4 li{
+            display: flex;
+            padding-bottom: 21px;
+        }
+        .ritik{
+            font-family: 'Dancing Script', cursive;
+            position: absolute;
+            top: 100px;
+            left: 500px;
+            font-size: 70px;
+
+        }
+        .ritik:hover{
+            transform: scale(1.3);
+            color: rgb(207, 33, 33);
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="javascript:void(0)"><img src="killercoda1.jpg" height="42px" width="121px" class="navimg"></a>
+        <a href="https://twitter.com/killercoda" target="_blank"><img src="twitter.png" height="15px" width="19px" class="navimg2"></a>
+        <a href="https://www.linkedin.com/company/killercoda/" target="_blank"><img src="linkedin.webp" height="17px" width="17px" class="navimg3"></a>
+        <a href="https://killercoda.com/slack" target="_blank"><img src="slack.png" height="25px" width="25px" class="navimg4"></a>
+        <span>
+            <ul>
+                <li><a href="javascript:void(0)" class="a">Areas</a></li>
+                <li><a href="javascript:void(0)" class="a">About</a></li>
+                <li><a href="javascript:void(0)" class="a">Pricing</a></li>
+                <li><a href="javascript:void(0)" class="a">Creators</a></li>
+                <li><a href="javascript:void(0)" class="a">Students</a></li>
+            </ul>
+        </span>
+        <a href="killercodaloginpage2.html" target="_blank"><button class="b">Login</button></a>
+    </nav> 
+    <div class="ritik">Ritik Boss</div> 
+    <br><br><br><br><br><br>
+    <center>
+        <div>
+            <strong><p class="c">Areas</p></strong>
+            <input type="search" class="searchbar1" placeholder="Search...">
+            <br><br>
+        </div>
+    </center>
+    <a href="killercodabox1.html" target="_blank"><div class="box1"></div></a>
+    <a href="killercodabox1.html" target="_blank"><div class="playgrounds">Playgrounds</div></a>
+    <a href="killercodabox1.html" target="_blank"><img src="killercoda1.jpg" class="boximg1"></a>
+
+    <a href="killercodabox2.html" target="_blank"><div class="box2"></div></a>
+    <a href="killercodabox2.html" target="_blank"><div class="examples">Examples</div></a>
+    <a href="killercodabox2.html" target="_blank"><img src="killercoda1.jpg" class="boximg2"></a>
+
+    <a href="javascript:void(0)"><div class="box3"></div></a>
+    <a href="javascript:void(0)"><div class="ckscertification">CKS Certification</div></a>
+    <a href="javascript:void(0)"><img src="cks2.svg" class="boximg3"></a>
+
+    <a href="javascript:void(0)"><div class="box4"></div></a>
+    <a href="javascript:void(0)"><div class="ckacertification">CKA Certification</div></a>
+    <a href="javascript:void(0)"><img src="cka2.svg" class="boximg4"></a>
+
+    <a href="javascript:void(0)"><div class="box5"></div></a>
+    <a href="javascript:void(0)"><div class="ckadcertification">CKAD Certification</div></a>
+    <a href="javascript:void(0)"><img src="ckad2.svg" class="boximg5"></a>
+
+    <a href="javascript:void(0)"><div class="box6"></div></a>
+    <a href="javascript:void(0)"><img src="kubevirt.svg" class="boximg6"></a>
+
+    <a href="javascript:void(0)"><div class="box7"></div></a>
+    <a href="javascript:void(0)"><img src="thanos.svg" class="boximg7"></a>
+
+    <a href="javascript:void(0)"><div class="box8"></div></a>
+    <a href="javascript:void(0)"><div class="git">by Pawel Piwosz</div></a>
+    <a href="javascript:void(0)"><img src="git.svg" class="boximg8"></a>
+
+    <a href="javascript:void(0)"><div class="box9"></div></a>
+    <a href="javascript:void(0)"><div class="linux">by Pawel Piwosz</div></a>
+    <a href="javascript:void(0)"><img src="linux.svg" class="boximg9"></a>
+
+    <a href="javascript:void(0)"><div class="box10"></div></a>
+    <a href="javascript:void(0)"><div class="lfcs">LFCS Certification</div></a>
+    <a href="javascript:void(0)"><img src="lfcs.svg" class="boximg10"></a>
+
+    <a href="javascript:void(0)"><div class="box11"></div></a>
+    <a href="javascript:void(0)"><img src="datastax.svg" class="boximg11"></a>
+
+    <a href="javascript:void(0)"><div class="box12"></div></a>
+    <a href="javascript:void(0)"><div class="argo">by Muhammad Abusaa</div></a>
+    <a href="javascript:void(0)"><img src="argo.svg" class="boximg12"></a>
+
+    <a href="javascript:void(0)"><div class="box13"></div></a>
+    <a href="javascript:void(0)"><div class="flux">by Siddharth Barahalikar</div></a>
+    <a href="javascript:void(0)"><img src="flux.svg" class="boximg13"></a>
+
+    <a href="javascript:void(0)"><div class="box14"></div></a>
+    <a href="javascript:void(0)"><div class="ansible">by Scott Champine</div></a>
+    <a href="javascript:void(0)"><img src="ansible.svg" class="boximg14"></a>
+
+    <a href="javascript:void(0)"><div class="box15"></div></a>
+    <a href="javascript:void(0)"><div class="hashicorp">by Scott Champine</div></a>
+    <a href="javascript:void(0)"><img src="hashicorp.svg" class="boximg15"></a>
+
+    <a href="javascript:void(0)"><div class="box16"></div></a>
+    <a href="javascript:void(0)"><div class="opentofu">by Quincy Cheng</div></a>
+    <a href="javascript:void(0)"><img src="opentufo.svg" class="boximg16"></a>
+
+    <a href="javascript:void(0)"><div class="box17"></div></a>
+    <a href="javascript:void(0)"><img src="keptn.svg" class="boximg17"></a>
+
+    <a href="javascript:void(0)"><div class="box18"></div></a>
+    <a href="javascript:void(0)"><img src="redpanda.svg" class="boximg18"></a>
+
+    <a href="javascript:void(0)"><div class="box19"></div></a>
+    <a href="javascript:void(0)"><img src="kubevela.svg" class="boximg19"></a>
+
+    <a href="javascript:void(0)"><div class="box20"></div></a>
+    <a href="javascript:void(0)"><img src="openfeature.svg" class="boximg20"></a>
+
+    <a href="javascript:void(0)"><div class="box21"></div></a>
+    <a href="javascript:void(0)"><img src="pactflow.svg" class="boximg21"></a>
+
+    <a href="javascript:void(0)"><div class="box22"></div></a>
+    <a href="javascript:void(0)"><img src="istio.svg" class="boximg22"></a>
+
+    <a href="javascript:void(0)"><div class="box23"></div></a>
+    <a href="javascript:void(0)"><div class="ica">ICA Certification</div></a>
+    <a href="javascript:void(0)"><img src="ica.svg" class="boximg23"></a>
+
+    <a href="javascript:void(0)"><div class="box24"></div></a>
+    <a href="javascript:void(0)"><img src="linkerd.svg" class="boximg24"></a>
+
+    <a href="javascript:void(0)"><div class="box25"></div></a>
+    <a href="javascript:void(0)"><div class="nginx">Ingress</div></a>
+    <a href="javascript:void(0)"><img src="nginx.svg" class="boximg25"></a>
+
+    <a href="javascript:void(0)"><div class="box26"></div></a>
+    <a href="javascript:void(0)"><img src="kubernets.svg" class="boximg26"></a>
+
+    <a href="javascript:void(0)"><div class="box27"></div></a>
+    <a href="javascript:void(0)"><img src="k3s.svg" class="boximg27"></a>
+
+    <a href="javascript:void(0)"><div class="box28"></div></a>
+    <a href="javascript:void(0)"><div class="vim">by Ozgur Yarikkas</div></a>
+    <a href="javascript:void(0)"><img src="vim.svg" class="boximg28"></a>
+
+    <a href="javascript:void(0)"><div class="box29"></div></a>
+    <a href="javascript:void(0)"><img src="terrascan.svg" class="boximg29"></a>
+
+    <a href="javascript:void(0)"><div class="box30"></div></a>
+    <a href="javascript:void(0)"><img src="helm.svg" class="boximg30"></a>
+
+    <a href="javascript:void(0)"><div class="box31"></div></a>
+    <a href="javascript:void(0)"><img src="falco.svg" class="boximg31"></a>
+
+    <a href="javascript:void(0)"><div class="box32"></div></a>
+    <a href="javascript:void(0)"><img src="docker.svg" class="boximg32"></a>
+
+    <a href="javascript:void(0)"><div class="box33"></div></a>
+    <a href="javascript:void(0)"><img src="podman.svg" class="boximg33"></a>
+
+    <a href="javascript:void(0)"><div class="box34"></div></a>
+    <a href="javascript:void(0)"><img src="gvisor.svg" class="boximg34"></a>
+
+    <a href="javascript:void(0)"><div class="box35"></div></a>
+    <a href="javascript:void(0)"><img src="kube-bench.svg" class="boximg35"></a>
+
+    <a href="javascript:void(0)"><div class="box36"></div></a>
+    <a href="javascript:void(0)"><img src="trivy.svg" class="boximg36"></a>
+
+    <a href="javascript:void(0)"><div class="box37"></div></a>
+    <a href="javascript:void(0)"><img src="starboard.png" class="boximg37"></a>
+
+    <a href="javascript:void(0)"><div class="box38"></div></a>
+    <a href="javascript:void(0)"><img src="openpolicyagent.svg" class="boximg38"></a>
+
+    <a href="javascript:void(0)"><div class="box39"></div></a>
+    <a href="javascript:void(0)"><img src="kyverno.svg" class="boximg39"></a>
+
+    <a href="javascript:void(0)"><div class="box40"></div></a>
+    <a href="javascript:void(0)"><img src="cloudfoundry.svg" class="boximg40"></a>
+
+    <a href="javascript:void(0)"><div class="box41"></div></a>
+    <a href="javascript:void(0)"><img src="pyrsid.svg" class="boximg41"></a>
+
+    <a href="javascript:void(0)"><div class="box42"></div></a>
+    <a href="javascript:void(0)"><div class="cyberark">by Quincy Cheng</div></a>
+    <a href="javascript:void(0)"><img src="cyberark.svg" class="boximg42"></a>
+
+    <a href="javascript:void(0)"><div class="box43"></div></a>
+    <a href="javascript:void(0)"><img src="garden.svg" class="boximg43"></a>
+
+    <a href="javascript:void(0)"><div class="box44"></div></a>
+    <a href="javascript:void(0)"><img src="notary.svg" class="boximg44"></a>
+
+    <a href="javascript:void(0)"><div class="box45"></div></a>
+    <a href="javascript:void(0)"><img src="openappsec.svg" class="boximg45"></a>
+
+    <a href="javascript:void(0)"><div class="box46"></div></a>
+    <a href="javascript:void(0)"><img src="m9sweeper.svg" class="boximg46"></a>
+
+    <a href="javascript:void(0)"><div class="box47"></div></a>
+    <a href="javascript:void(0)"><div class="boximg47">+</div></a>
+
+    <input type="search" class="searchbar2" placeholder="Search...">
+    <strong><p class="d">Featured</p></strong>
+
+    <a href="javascript:void(0)"><div class="box48"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext1">Killing with Kubernetes and beyond.</div></a>
+    <a href="javascript:void(0)"><div class="boxtext2">Learning new technologies in a fun and simplified way |</div></a>
+
+    <a href="javascript:void(0)"><div class="box49"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext3">Ansible Handson</div></a>
+    <a href="javascript:void(0)"><div class="boxtext4">How to use and develop Playbooks | Ansible is a powerful infrastructure automation tool</div></a>
+
+    <a href="javascript:void(0)"><div class="box50"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext5">Chad M. Crowell</div></a>
+    <a href="javascript:void(0)"><div class="boxtext6">Kubernetes Scenarios | Acing the CKA & CKAD exams.</div></a>
+
+    <a href="javascript:void(0)"><div class="box51"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext7">Deepak9976</div></a>
+    <a href="javascript:void(0)"><div class="boxtext8">Techincal CEO and founder , devops architect https://github.com/de<br>epak-9976</div></a>
+
+    <a href="javascript:void(0)"><div class="box52"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext9">Dragonfly</div></a>
+    <a href="javascript:void(0)"><div class="boxtext10">An Open-source P2P-based Image and File Distribution System | Dragonfly is an open source P2P-based file</div></a>
+
+    <a href="javascript:void(0)"><div class="box53"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext11">Het-Tanis ProLUG Labs</div></a>
+    <a href="javascript:void(0)"><div class="boxtext12">Linux and System skills to get the job. | Senior Linux and Network Engineer (20+ years).</div></a>
+
+    <a href="javascript:void(0)"><div class="box54"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext13">Ir4 engineer</div></a>
+    <a href="javascript:void(0)"><div class="boxtext14">Devops, architect and coder. | Devops engineer for a large UK company, living in the amazing city of </div></a>
+
+    <a href="javascript:void(0)"><div class="box55"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext15">Kim Wustkamp</div></a>
+    <a href="javascript:void(0)"><div class="boxtext16">DevOps | Kubernetes | Containers | Training</div></a>
+
+    <a href="javascript:void(0)"><div class="box56"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext17">Kyma</div></a>
+    <a href="javascript:void(0)"><div class="boxtext18">Interactive tutorials | Kyma is the opinionated set of Kubernetes based modular building</div></a>
+
+    <a href="javascript:void(0)"><div class="box57"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext19">Mario's Lab Practices</div></a>
+    <a href="javascript:void(0)"><div class="boxtext20">Mario's workplace</div></a>
+
+    <a href="javascript:void(0)"><div class="box58"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext21">Pipekit</div></a>
+    <a href="javascript:void(0)"><div class="boxtext22">The control plane for Argo Workflows | Pipekit's control plane scales data pipelines for enterprises, saving</div></a>
+
+    <a href="javascript:void(0)"><div class="box59"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext23">Quincy Cheng</div></a>
+    <a href="javascript:void(0)"><div class="boxtext24">Actions speak louder than words | <br> Welcome! Here you can find my CyberArk tutorials migrated</div></a>
+
+    <a href="javascript:void(0)"><div class="box60"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext25">Saiyam Pathak</div></a>
+    <a href="javascript:void(0)"><div class="boxtext26"></div></a>
+
+    <a href="javascript:void(0)"><div class="box61"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext27">SchemaCrawler</div></a>
+    <a href="javascript:void(0)"><div class="boxtext28">Free database schema discovery and comprehension tool | SchemaCrawler is a free database schema</div></a>
+
+    <a href="javascript:void(0)"><div class="box62"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext29">ScyllaDB is the Best NoSQL Database</div></a>
+    <a href="javascript:void(0)"><div class="boxtext30">We built our NoSQL database with a close-to-the-</div></a>
+
+    <a href="javascript:void(0)"><div class="box63"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext31">Cloud Native</div></a>
+    <a href="javascript:void(0)"><div class="boxtext32">Foundational Labs</div></a>
+
+    <a href="javascript:void(0)"><div class="box64"></div></a>
+    <a href="javascript:void(0)"><div class="boxplus2">+</div></a>
+
+    <input type="search" class="searchbar3" placeholder="Search...">
+    <strong><p class="e">Popular</p></strong>
+
+    <a href="javascript:void(0)"><div class="box65"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext33">Arthas Tutorials</div></a>
+    <a href="javascript:void(0)"><div class="boxtext34">Arthas Tutorials | Https://github.com/ali<br>baba/arthas</div></a>
+
+    <a href="javascript:void(0)"><div class="box66"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext35">Learn DevOps Online</div></a>
+    <a href="javascript:void(0)"><div class="boxtext36"></div></a>
+
+    <a href="javascript:void(0)"><div class="box67"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext37">Mentorchita</div></a>
+    <a href="javascript:void(0)"><div class="boxtext38">Mentorchita workshop</div></a>
+
+    <a href="javascript:void(0)"><div class="box68"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext39">Argoproj</div></a>
+    <a href="javascript:void(0)"><div class="boxtext40">Get More Done with Kubernetes | Open source tools for Kubernetes to run workflows, manage</div></a>
+
+    <a href="javascript:void(0)"><div class="box69"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext41">Mateusz Miotk Exercises</div></a>
+    <a href="javascript:void(0)"><div class="boxtext42">Mateusz Miotk Exercises</div></a>
+
+    <a href="javascript:void(0)"><div class="box70"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext43">CKA Mock Exam</div></a>
+    <a href="javascript:void(0)"><div class="boxtext44">CKA Mock Exam (2 Hours) sachinhr.ran@gmail.c<br>om</div></a>
+
+    <a href="javascript:void(0)"><div class="box71"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext45">LFCS</div></a>
+    <a href="javascript:void(0)"><div class="boxtext46">Interactive Scenarios for the Linux Foundation Certified System Administrator (LFCS) | Certification: </div></a>
+
+    <a href="javascript:void(0)"><div class="box72"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext47">Marcelo Guazzardo</div></a>
+    <a href="javascript:void(0)"><div class="boxtext48">It del tercermundo - QQmelo | RHCSA / Openshift Lead K8s/Terra/AWS/AZUR</div></a>
+
+    <a href="javascript:void(0)"><div class="box73"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext49">SR Cloud Engineer</div></a>
+    <a href="javascript:void(0)"><div class="boxtext50">As a Senior Cloud Engineer, I thrive on troubleshooting and automating tasks. I'm </div></a>
+
+    <a href="javascript:void(0)"><div class="box74"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext51">StarRocks</div></a>
+    <a href="javascript:void(0)"><div class="boxtext52">Hands-on Labs | StarRocks is a next-gen sub-second MPP database for full analytics scenarios,</div></a>
+
+    <a href="javascript:void(0)"><div class="box75"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext53">Linux Sem Fronteiras</div></a>
+    <a href="javascript:void(0)"><div class="boxtext54"></div></a>
+
+    <a href="javascript:void(0)"><div class="box76"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext55">Siddharth Barahalikar</div></a>
+    <a href="javascript:void(0)"><div class="boxtext56">DevSecOps | MuleSoft | Kubernetes | Apigee | Istio | GCP | I am deeply passionate</div></a>
+
+    <a href="javascript:void(0)"><div class="box77"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext57">Tdu-handson</div></a>
+    <a href="javascript:void(0)"><div class="boxtext58"></div></a>
+
+    <a href="javascript:void(0)"><div class="box78"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext59">Iiamloz</div></a>
+    <a href="javascript:void(0)"><div class="boxtext60"></div></a>
+
+    <a href="javascript:void(0)"><div class="box79"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext61">Vodafone Coding Club</div></a>
+    <a href="javascript:void(0)"><div class="boxtext62">Our coding tutorials all in one place</div></a>
+
+    <a href="javascript:void(0)"><div class="box80"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext63">Asyncapi</div></a>
+    <a href="javascript:void(0)"><div class="boxtext64"></div></a>
+
+    <a href="javascript:void(0)"><div class="box81"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext65">Arthasss</div></a>
+    <a href="javascript:void(0)"><div class="boxtext66">Java Diagnostic Tool Java 应用诊断利器</div></a>
+
+    <a href="javascript:void(0)"><div class="box82"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext67">Kubernetes</div></a>
+    <a href="javascript:void(0)"><div class="boxtext68">Clarusway</div></a>
+
+    <a href="javascript:void(0)"><div class="box83"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext69">K8s Scenario for INAF Container fundamental school</div></a>
+    <a href="javascript:void(0)"><div class="boxtext70"></div></a>
+
+    <a href="javascript:void(0)"><div class="box84"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext71">Mlegenkiy</div></a>
+    <a href="javascript:void(0)"><div class="boxtext72"></div></a>
+
+    <a href="javascript:void(0)"><div class="box85"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext73">ICA Certification</div></a>
+    <a href="javascript:void(0)"><div class="boxtext74">Interactive Scenarios for the Istio Certified Associate (ICA) | Certification: https://training.linuxfo</div></a>
+
+    <a href="javascript:void(0)"><div class="box86"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext75">Piotr Zaniewski</div></a>
+    <a href="javascript:void(0)"><div class="boxtext76">Cloud-Native & Crossplane | Opinions: Multi-cloud is real, Microservices are hard, Kubernetes is</div></a>
+
+    <a href="javascript:void(0)"><div class="box87"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext77">Ivan Sierov</div></a>
+    <a href="javascript:void(0)"><div class="boxtext78">SoftServe</div></a>
+
+    <a href="javascript:void(0)"><div class="box88"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext79">CKA Mock Exam</div></a>
+    <a href="javascript:void(0)"><div class="boxtext80">CKA Mock Exam (2 Hours)</div></a>
+
+    <a href="javascript:void(0)"><div class="box89"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext81">Krateo PlatformOps</div></a>
+    <a href="javascript:void(0)"><div class="boxtext82">Unleash Your Cloud Platform Potential | Krateo Platformops is an open source</div></a>
+
+    <a href="javascript:void(0)"><div class="box90"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext83">Docker & Kubernetes</div></a>
+    <a href="javascript:void(0)"><div class="boxtext84">Docker 와 Kubernetes 기초학습 공간입니다.</div></a>
+
+    <a href="javascript:void(0)"><div class="box91"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext85">Online Marathon</div></a>
+    <a href="javascript:void(0)"><div class="boxtext86"></div></a>
+
+    <a href="javascript:void(0)"><div class="box92"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext87">Jumpbox Academy</div></a>
+    <a href="javascript:void(0)"><div class="boxtext88">Tech Passion | Sharing | Society</div></a>
+
+    <a href="javascript:void(0)"><div class="box93"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext89">Jenkins Testing</div></a>
+    <a href="javascript:void(0)"><div class="boxtext90"></div></a>
+
+    <a href="javascript:void(0)"><div class="box94"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext91">A-K K8's training</div></a>
+    <a href="javascript:void(0)"><div class="boxtext92">Devops</div></a>
+
+    <a href="javascript:void(0)"><div class="box95"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext93">Examples Courses</div></a>
+    <a href="javascript:void(0)"><div class="boxtext94">How can Creators bundle their scenarios into courses on Killercoda? |</div></a>
+
+    <a href="javascript:void(0)"><div class="box96"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext95">InfluxData</div></a>
+    <a href="javascript:void(0)"><div class="boxtext96">The leading time series database | A set of tutorials for understanding complex architectures</div></a>
+
+    <a href="javascript:void(0)"><div class="box97"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext97">CKA Study Scenarios</div></a>
+    <a href="javascript:void(0)"><div class="boxtext98">This scenarios aim to cover all the Domains & Competencies required to pass the </div></a>
+
+    <a href="javascript:void(0)"><div class="box98"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext99">Docker Image</div></a>
+    <a href="javascript:void(0)"><div class="boxtext100">Learning docker image | For helping tutorial docker image</div></a>
+
+    <a href="javascript:void(0)"><div class="box99"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext101">KubeArmor</div></a>
+    <a href="javascript:void(0)"><div class="boxtext102">Let's create a playground for different scenerios.</div></a>
+
+    <a href="javascript:void(0)"><div class="box100"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext103">Hello Docker</div></a>
+    <a href="javascript:void(0)"><div class="boxtext104"></div></a>
+
+    <a href="javascript:void(0)"><div class="box101"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext105">Mr. I/O</div></a>
+    <a href="javascript:void(0)"><div class="boxtext106"></div></a>
+
+    <a href="javascript:void(0)"><div class="box102"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext107">Devops</div></a>
+    <a href="javascript:void(0)"><div class="boxtext108"> </div></a>
+
+    <a href="javascript:void(0)"><div class="box103"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext109">Ansible + Clouds</div></a>
+    <a href="javascript:void(0)"><div class="boxtext110">Use ansible to automatically deploy apps on AWS, AZURE, GCP</div></a>
+
+    <a href="javascript:void(0)"><div class="box104"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext111">Anik Barua</div></a>
+    <a href="javascript:void(0)"><div class="boxtext112">Cloud Architect | AWS | Kubernetes Certified | DevOps | One of my many goals is to use my passion and skills</div></a>
+
+    <a href="javascript:void(0)"><div class="box105"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext113">Karmada</div></a>
+    <a href="javascript:void(0)"><div class="boxtext114">Open, Multi-Cloud, Multi-Cluster Kubernetes Orchestration | Karmada (Kubernetes Armada) is a</div></a>
+
+    <a href="javascript:void(0)"><div class="box106"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext115">Cloudnative handson</div></a>
+    <a href="javascript:void(0)"><div class="boxtext116"></div></a>
+
+    <a href="javascript:void(0)"><div class="box107"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext117">DevOps Onboarding</div></a>
+    <a href="javascript:void(0)"><div class="boxtext118">Helm Basics | WIP, But 1 Scenario available https://github.com/ka<br>rlderkaefer/killercoda-devops-onboarding</div></a>
+
+    <a href="javascript:void(0)"><div class="box108"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext119">MKConsulting</div></a>
+    <a href="javascript:void(0)"><div class="boxtext120">Training</div></a>
+
+    <a href="javascript:void(0)"><div class="box109"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext121">Grafana Xk6 Disruptor</div></a>
+    <a href="javascript:void(0)"><div class="boxtext122"></div></a>
+
+    <a href="javascript:void(0)"><div class="box110"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext123">KTH Student Tutorials</div></a>
+    <a href="javascript:void(0)"><div class="boxtext124">Creating high-quality executable tutorials for KTHs DevOps course.</div></a>
+
+    <a href="javascript:void(0)"><div class="box111"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext125">Keeper</div></a>
+    <a href="javascript:void(0)"><div class="boxtext126"></div></a>
+
+    <a href="javascript:void(0)"><div class="box112"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext127">ITSM Supplemental</div></a>
+    <a href="javascript:void(0)"><div class="boxtext128">Docker/Kubernetes Scenarios | This area provides scenario's for the introduction to</div></a>
+
+    <a href="javascript:void(0)"><div class="box113"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext129">NetLOX's LoxiLB Cloud Native Play Ground</div></a>
+    <a href="javascript:void(0)"><div class="boxtext130">Ebpf based LoxiLB | This repository is LoxiLB playground for everyone. Visit our</div></a>
+
+    <a href="javascript:void(0)"><div class="box114"></div></a>
+    <a href="javascript:void(0)"><div class="boxtext131">Davidhrbac</div></a>
+    <a href="javascript:void(0)"><div class="boxtext132"></div></a>
+
+    <div class="black">
+        <ul class="ul2">
+            <li><a href="javascript:void(0)"><img src="killercoda2.svg" class="blackimg"></a></li><br><br>
+            <li><a href="javascript:void(0)" class="list1">About</a></li>
+            <li><a href="javascript:void(0)" class="list1">Explore</a></li>
+            <li><a href="javascript:void(0)" class="list1">Learn Kubernetes Security</a></li></a>
+            <li><a href="javascript:void(0)" class="list1">Creators</a></li>
+            <li><a href="javascript:void(0)" class="list1">Students</a></li>
+            <li><a href="javascript:void(0)" class="list1">Contribute</a></li>
+            <li><a href="javascript:void(0)" class="list1">Legal / Privacy</a></li></a>
+        </ul>
+        <ul class="ul3">
+            <li class="list2">CONTENT</li><br><br>
+            <li><a href="javascript:void(0)" class="list1">PLUS</a></li>
+            <li><a href="javascript:void(0)" class="list1">FAQ</a></li>
+            <li><a href="javascript:void(0)" class="list1">Support</a></li></a>
+            <li><a href="javascript:void(0)" class="list1">Business Contact</a></li>
+            <li><a href="javascript:void(0)" class="list1">Pricing</a></li>
+            <li><a href="javascript:void(0)" class="list1">Media / Press</a></li>
+            <li><a href="javascript:void(0)" class="list1">We vs Killer Shell</a></li></a>
+            <li><a href="javascript:void(0)" class="list1">Bug Bounty</a></li></a>
+        </ul>
+        <ul class="ul4">
+            <li class="list3">LINKS</li><br><br>
+            <li><a href="javascript:void(0)" class="list1">Killer Shell</a></li>
+            <li><a href="https://twitter.com/killercoda" target="_blank"><img src="twitter.png" height="15px" width="19px"></a></li>
+            <li><a href="https://www.linkedin.com/company/killercoda/" target="_blank"><img src="linkedin.webp" height="17px" width="17px"></a></li></a>
+            <li><a href="https://killercoda.com/slack" target="_blank"><img src="slack.png" height="25px" width="25px"></a></li>
+        </ul>
+
+    </div>
+    
+    
+</body>
+</html>
