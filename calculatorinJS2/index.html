@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body bgcolor="pink">
+
+    <script>
+        var a= parseInt(prompt("Enter your first num:- "));
+        var b= parseInt(prompt("Enter your second num:- "));
+        var c= (prompt("what do you want?:- "));
+        if (c=='+') {
+            document.write("The sum of " + a + " & " + b + " is " + (a+b))
+        } else if (c=='-') {
+            document.write("The sub of " + a + " & " + b + " is " + (a-b))
+        } else if (c=='*') {
+            document.write("The mul of " + a + " & " + b + " is " + (a*b))
+        } else if (c=='/') {
+            document.write("The dev of " + a + " & " + b + " is " + (a/b))
+        } else {
+            document.write("Plese retry, & choose one of (+,-,*,/)")
+        }
+    </script>
+</body>
+</html>
