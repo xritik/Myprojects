@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 25px 1px rgba(0, 255, 255, 0.7);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-bottom: 20px;
+        }
+
+        li {
+            list-style-type: none;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 80px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #777;
+        }
+
+        .progress-container {
+            margin-top: 10px;
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 10px;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            width: 0%;
+            height: 100%;
+            background-color: #007bff;
+            transition: width 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Calculator</h2>
+        <ul>
+            <li>Your problems must be like a+b, a-b, a*b, a/b, a%b, a^b</li>
+        </ul>
+        <label for="myinput">Enter your problem:</label>
+        <input type="text" id="myinput">
+        <button id="mybtn">Calculate</button>
+        <div class="progress-container" id="progressContainer" style="display: none;">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <p id="myoutput"></p>
+    </div>
+    <footer>@ritik</footer>
+
+    <script>
+        let btn = document.getElementById("mybtn")
+        btn.addEventListener("click", function(){
+            let input = document.getElementById("myinput").value;
+            let output = document.getElementById("myoutput")
+            let progressContainer = document.getElementById("progressContainer");
+            let progressBar = document.getElementById("progressBar");
+            progressContainer.style.display = "block";
+            progressBar.style.width = "0%";
+            let lnthofinput = input.length
+            aa = input.indexOf("+")
+            bb = input.indexOf("-")
+            cc = input.indexOf("*")
+            dd = input.indexOf("/")
+            ee = input.indexOf("%")
+            ff = input.indexOf("^")
+            let calculationStarted = false;
+            let interval = setInterval(() => {
+                if (!calculationStarted) {
+                    calculationStarted = true;
+                    progressBar.style.width = "1%";
+                } else {
+                    progressBar.style.width = parseInt(progressBar.style.width) + 1 + "%";
+                    if (progressBar.style.width === "100%") {
+                        clearInterval(interval);
+                    }
+                }
+            }, 20);
+            if(aa != -1){
+                let a = parseInt(input.slice(0, aa))
+                let b = parseInt(input.slice(aa+1))
+                setTimeout(() => {
+                    output.innerHTML = ("Your ans. is: "+ (a+b));
+                    progressContainer.style.display = "none";
+                }, 3000);
+            }else if(bb != -1){
+                let a = parseInt(input.slice(0, bb))
+                let b = parseInt(input.slice(bb+1))
+                setTimeout(() => {
+                    output.innerHTML = ("Your ans. is: "+ (a-b));
+                    progressContainer.style.display = "none";
+                }, 3000);
+            }else if(cc != -1){
+                let a = parseInt(input.slice(0, cc))
+                let b = parseInt(input.slice(cc+1))
+                setTimeout(() => {
+                    output.innerHTML = ("Your ans. is: "+ (a*b));
+                    progressContainer.style.display = "none";
+                }, 3000);
+            }else if(dd != -1){
+                let a = parseInt(input.slice(0, dd))
+                let b = parseInt(input.slice(dd+1))
+                setTimeout(() => {
+                    output.innerHTML = ("Your ans. is: "+ (a/b));
+                    progressContainer.style.display = "none";
+                }, 3000);
+            }else if(ee != -1){
+                let a = parseInt(input.slice(0, ee))
+                let b = parseInt(input.slice(ee+1))
+                setTimeout(() => {
+                    output.innerHTML = ("Your ans. is: "+ (a%b));
+                    progressContainer.style.display = "none";
+                }, 3000);
+            }else if(ff != -1){
+                let a = parseInt(input.slice(0, ff))
+                let b = parseInt(input.slice(ff+1))
+                setTimeout(() => {
+                    output.innerHTML = ("Your ans. is: "+ (a**b));
+                    progressContainer.style.display = "none";
+                }, 3000);
+            }else {
+                output.innerHTML = "Invalid input";
+            }
+        })
+    </script>
+</body>
+</html>
