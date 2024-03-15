@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter availability test by year month day & etc.</title>
+</head>
+<body>
+    Enter your birth year:- <input type="text" id="myinputyear"><br>
+    Enter your birth month -1 :- <input type="text" id="myinputmonth"><br>
+    Enter your birth day:- <input type="text" id="myinputday"><br>
+    <button id="mybtn">Click</button>
+    <p id="myoutput"></p>
+    <script>
+        let btn = document.getElementById("mybtn");
+        let mydate = new Date
+        btn.addEventListener("click", function(){
+            let inputyear = document.getElementById("myinputyear").value
+            let inputmonth = document.getElementById("myinputmonth").value
+            let inputday = document.getElementById("myinputday").value
+            let output = document.getElementById("myoutput")
+            let yearn = mydate.getFullYear()
+            let monthn = mydate.getMonth()
+            let dayn = mydate.getDate()
+            let year18 = yearn-18
+            let a = mydate.getFullYear()-100;
+            if(inputyear<=1900){
+                output.innerHTML = "Retry!!!"
+            }else if(inputyear>yearn){
+                output.innerHTML = "Abe tu thoda sa BKL h ky"
+            }else if(inputyear<=a && inputyear>1900){
+                output.innerHTML = "Tu abhi jinda h???"
+            }else if(inputyear>year18){
+                output.innerHTML = "You can't vote bruhhh!!!"
+            }else if(inputyear==year18){
+                if(inputmonth<monthn){
+                    output.innerHTML = "Yes you'r able to vote broo"
+                }else if(inputmonth==monthn){
+                    if(inputday<dayn){
+                        output.innerHTML = "Yes you'r able to vote broo"
+                    }else if(inputday<=dayn){
+                        output.innerHTML = "You can't vote bruhhh!!!"
+                    }
+                }else{
+                    output.innerHTML = "You can't vote bruhhh!!!"
+                }
+            }else if (inputyear<year18){
+                output.innerHTML = "Yes you'r able to vote broo"
+            }
+        })
+    </script>
+</body>
+</html>
