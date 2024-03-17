@@ -128,43 +128,43 @@
                 }
             }, 20);
             if(aa != -1){
-                let a = parseInt(input.slice(0, aa))
-                let b = parseInt(input.slice(aa+1))
+                let a = parseFloat(input.slice(0, aa))
+                let b = parseFloat(input.slice(aa+1))
                 setTimeout(() => {
                     output.innerHTML = ("Your ans. is: "+ (a+b));
                     progressContainer.style.display = "none";
                 }, 3000);
             }else if(bb != -1){
-                let a = parseInt(input.slice(0, bb))
-                let b = parseInt(input.slice(bb+1))
+                let a = parseFloat(input.slice(0, bb))
+                let b = parseFloat(input.slice(bb+1))
                 setTimeout(() => {
                     output.innerHTML = ("Your ans. is: "+ (a-b));
                     progressContainer.style.display = "none";
                 }, 3000);
             }else if(cc != -1){
-                let a = parseInt(input.slice(0, cc))
-                let b = parseInt(input.slice(cc+1))
+                let a = parseFloat(input.slice(0, cc))
+                let b = parseFloat(input.slice(cc+1))
                 setTimeout(() => {
                     output.innerHTML = ("Your ans. is: "+ (a*b));
                     progressContainer.style.display = "none";
                 }, 3000);
             }else if(dd != -1){
-                let a = parseInt(input.slice(0, dd))
-                let b = parseInt(input.slice(dd+1))
+                let a = parseFloat(input.slice(0, dd))
+                let b = parseFloat(input.slice(dd+1))
                 setTimeout(() => {
                     output.innerHTML = ("Your ans. is: "+ (a/b));
                     progressContainer.style.display = "none";
                 }, 3000);
             }else if(ee != -1){
-                let a = parseInt(input.slice(0, ee))
-                let b = parseInt(input.slice(ee+1))
+                let a = parseFloat(input.slice(0, ee))
+                let b = parseFloat(input.slice(ee+1))
                 setTimeout(() => {
                     output.innerHTML = ("Your ans. is: "+ (a%b));
                     progressContainer.style.display = "none";
                 }, 3000);
             }else if(ff != -1){
-                let a = parseInt(input.slice(0, ff))
-                let b = parseInt(input.slice(ff+1))
+                let a = parseFloat(input.slice(0, ff))
+                let b = parseFloat(input.slice(ff+1))
                 setTimeout(() => {
                     output.innerHTML = ("Your ans. is: "+ (a**b));
                     progressContainer.style.display = "none";
