@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 90vh;
+        }
+
+        h1 {
+            font-family: 'Caveat', cursive;
+            font-size: 40px;
+            margin-top: -10px;
+        }
+
+        .container {
+            background-color: rgb(153, 55, 55);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+            /* glowing outline */
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+            padding: 20px;
+            text-align: center;
+            width: 60%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .section2 {
+            display: flex;
+        }
+
+        .part1 {
+            width: 40%;
+        }
+
+        .part2 {
+            width: 60%;
+            text-align: left;
+        }
+
+        .dpp {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(50, 150, 100, .5);
+            animation: floatImage 4s ease-in-out infinite;
+        }
+
+        @keyframes floatImage {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-2.4rem);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        #dp {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(50, 150, 100, .5);
+        }
+
+        input {
+            background-color: rgb(177, 179, 168);
+            border-radius: 5px;
+            height: 25px;
+        }
+
+        button {
+            background-color: green;
+            border-radius: 5px;
+            height: 30px;
+            width: 50px;
+        }
+
+        .bb {
+            color: rgb(17, 17, 17);
+            font-family: "Bubblegum Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* .animate__fadeInRightBig {
+            -webkit-animation-name: fadeInRightBig;
+            animation-name: fadeInRightBig;
+            animation-duration: 3s;
+        }
+        @keyframes fadeInRightBig {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(2000px, 0, 0);
+                transform: translate3d(2000px, 0, 0);
+                transform: translateX(100%);
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRightBig {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(2000px, 0, 0);
+                transform: translate3d(2000px, 0, 0)
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+        } */
+        b{
+            display: inline-block;
+        }
+        @media (max-width: 900px){
+            .section1{
+                height: 60px;
+            }
+            .section2{
+                display: block;
+            }
+            .container{
+                /* display: flex; */
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                /* position: relative; */
+                width: 40%;
+                height: 60vh;
+            }
+            .part1{
+                width: auto;
+            }
+            .part2{
+                width: auto;
+            }
+            #dp{
+                height: 150px;
+                width: 150px;
+            }
+            input{
+                margin-left: 18%;
+            }
+        }
+        @media (max-width: 755px){
+            h1{
+               font-size: 30px; 
+            }
+            input{
+                margin-left: 2%;
+            }
+        }
+        @media (max-width: 600px){
+            h1{
+               font-size: 23px; 
+            }
+            input{
+                margin-left: -2%;
+                width: 150px;
+            }
+            /* .container{
+                width: 100%;
+            } */
+        }
+        @media (max-width: 500px){
+            .container{
+                height: 70%;
+                width: 80%;
+            }
+            .part1{
+                height: 170px;
+            }
+            body{
+                background-color: red;
+            }
+            input{
+                /* margin-left: -10%; */
+                width: 200px;
+            }
+            .section1{
+                height: 70px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+        <div class="container">
+            <div class="section1">
+                <h1>About Your Github Ac.</h1>
+            </div>
+            <div class="section2">
+                <div class="part1">
+                    <img src="https://pinnacle.works/wp-content/uploads/2022/06/dummy-image.jpg" id="dp">
+                </div>
+                <div class="part2">
+                    <input type="text" id="myusername" placeholder="Enter your username">
+                    <button id="mybtn">Click</button><br>
+                    <h3>My name:- <b id="name">abc</b></h3>
+                    <h3>My bio:- <b id="bio">abc</b></h3>
+                    <h3>My followers:- <b id="followers">abc</b></h3>
+                </div>
+            </div>
+        </div>
+    <script>
+        let btn = document.getElementById("mybtn")
+        btn.addEventListener("click", function () {
+
+            async function myfun() {
+                let username = document.getElementById("myusername").value;
+                let apidata = await fetch(`https://api.github.com/users/${username}`)
+                let data = await apidata.json()
+                console.log(data)
+                let name = document.getElementById("name")
+                let bio = document.getElementById("bio")
+                let followers = document.getElementById("followers")
+                let dp = document.getElementById("dp")
+                name.innerHTML = data.name;
+                bio.innerHTML = data.bio;
+                followers.innerHTML = data.followers;
+
+                name.classList.add("animate__animated", "animate__fadeInDown", "bb")
+                bio.classList.add("animate__animated", "animate__fadeInRight", "bb")
+                followers.classList.add("animate__animated", "animate__fadeInUp", "bb")
+
+                dp.classList.add("animate__animated", "animate__fadeInLeft", "dpp")
+                dp.src = data.avatar_url
+            }
+            myfun()
+        });
+    </script>
+</body>
+
+</html>
