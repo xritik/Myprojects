@@ -104,9 +104,9 @@ span{
 .home-content p{
     font-size: 1.6rem;
 }
-.social-media{
+/* .social-media{
     width: 228px;
-}
+} */
 .social-media a{
     display: inline-flex;
     justify-content: center;
