@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body{
+            overflow: hidden;
+        }
+        .main{
+            display: flex;
+            height: 20vh;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+        section{
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .containerr{
+            display: flex;
+            width: 318px;
+            flex-wrap: wrap;
+        }
+        .boxs{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100px;
+            background-color: rgb(219, 255, 255);
+            border: 2px solid black;
+        }
+        .mycircle{
+            font-size: 70px;
+        }
+        .mycross{
+            font-size: 80px;
+        }
+        .navbar-brand{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <span class="navbar-brand w-100 d-flex align-items-center justify-content-center"><b>Tic-Tac-Toe</b></span>
+        </div>
+    </nav>
+
+
+    <!-- <div class="main">
+        <span>Tic-Tac-Toe</span>
+    </div> -->
+
+    <div class="d-flex justify-content-center align-items-center gap-5 my-4">
+        <div id="player1"><h3>l player- X</h3></div>
+        <div id="player2"><h3>ll player- O</h3></div>
+    </div>
+
+    <section>
+        <div class="containerr">
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+            <div class="boxs"></div>
+        </div>
+    </section>
+
+
+
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Please enter players name:</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <div class="m-1">1st player:- <input id="1stplayername" class="mx-1" type="text" placeholder="Enter your name:"></div>
+                    <div class="m-1">2nd player:- <input id="2ndplayername" type="text" placeholder="Enter your name:"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+              <button type="button" onclick="playernaming()" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+        
+    
+    
+
+    <!-- <i class='bx bx-circle'></i> -->
+
+
+
+    <script>
+        let i = 0;
+        const mybox = document.querySelectorAll(".boxs");
+        for (let j = 0; j < mybox.length; j++) {
+            mybox[j].addEventListener("click", function handleClick(e) {
+                i++;
+                let boxx = e.target;
+                if(i%2 == 0){
+                    boxx.classList.add("bx", "bx-circle", "mycircle");
+                    boxx.setAttribute("id", "circle");
+                }else{
+                    boxx.classList.add("bx", "bx-x", "mycircle");
+                    boxx.setAttribute("id", "cross");
+                }
+                // console.log(boxx);
+                console.log(j)
+                // console.log(i);
+    
+                // Remove the event listener after the first click
+                boxx.removeEventListener("click", handleClick);
+                console.log(mybox[j].getAttribute('id'))
+                if ((mybox[0].getAttribute('id') === 'circle' && mybox[1].getAttribute('id') === 'circle' && mybox[2].getAttribute('id') === 'circle') ||
+                    (mybox[3].getAttribute('id') === 'circle' && mybox[4].getAttribute('id') === 'circle' && mybox[5].getAttribute('id') === 'circle') ||
+                    (mybox[6].getAttribute('id') === 'circle' && mybox[7].getAttribute('id') === 'circle' && mybox[8].getAttribute('id') === 'circle') ||
+                    (mybox[0].getAttribute('id') === 'circle' && mybox[3].getAttribute('id') === 'circle' && mybox[6].getAttribute('id') === 'circle') ||
+                    (mybox[1].getAttribute('id') === 'circle' && mybox[4].getAttribute('id') === 'circle' && mybox[7].getAttribute('id') === 'circle') ||
+                    (mybox[2].getAttribute('id') === 'circle' && mybox[5].getAttribute('id') === 'circle' && mybox[8].getAttribute('id') === 'circle') ||
+                    (mybox[0].getAttribute('id') === 'circle' && mybox[4].getAttribute('id') === 'circle' && mybox[8].getAttribute('id') === 'circle') ||
+                    (mybox[2].getAttribute('id') === 'circle' && mybox[4].getAttribute('id') === 'circle' && mybox[6].getAttribute('id') === 'circle')){
+                    console.log('2nd won');
+                    alert('2nd won')
+                }else if((mybox[0].getAttribute('id') === 'cross' && mybox[1].getAttribute('id') === 'cross' && mybox[2].getAttribute('id') === 'cross') ||
+                        (mybox[3].getAttribute('id') === 'cross' && mybox[4].getAttribute('id') === 'cross' && mybox[5].getAttribute('id') === 'cross') ||
+                        (mybox[6].getAttribute('id') === 'cross' && mybox[7].getAttribute('id') === 'cross' && mybox[8].getAttribute('id') === 'cross') ||
+                        (mybox[0].getAttribute('id') === 'cross' && mybox[3].getAttribute('id') === 'cross' && mybox[6].getAttribute('id') === 'cross') ||
+                        (mybox[1].getAttribute('id') === 'cross' && mybox[4].getAttribute('id') === 'cross' && mybox[7].getAttribute('id') === 'cross') ||
+                        (mybox[2].getAttribute('id') === 'cross' && mybox[5].getAttribute('id') === 'cross' && mybox[8].getAttribute('id') === 'cross') ||
+                        (mybox[0].getAttribute('id') === 'cross' && mybox[4].getAttribute('id') === 'cross' && mybox[8].getAttribute('id') === 'cross') ||
+                        (mybox[2].getAttribute('id') === 'cross' && mybox[4].getAttribute('id') === 'cross' && mybox[6].getAttribute('id') === 'cross')){
+                        console.log('1nd won');
+                        alert('1st won')
+                        }
+            });
+
+        }
+
+
+
+
+
+
+        
+
+    function playernaming() {
+    let player1st = document.getElementById("1stplayername").value;
+    let player2nd = document.getElementById("2ndplayername").value;
+    
+    document.getElementById("player1").innerHTML = `<h3>${player1st}- X</h3>`
+    document.getElementById("player2").innerHTML = `<h3>${player2nd}- O</h3>`
+    }
+
+
+
+
+
+
+
+
+
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+      var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
+      myModal.show();
+    });
+    </script>
+    
+    
+</body>
+
+</body>
+</html>
