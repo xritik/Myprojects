@@ -36,6 +36,9 @@ function handleClick(e) {
         player1Wins++;
         logWins();
         showModal();
+    }else if (i === 9) { // All boxes filled, no winner
+        document.getElementById('winnerMessage').innerText = `Match Draw!`;
+        showModal();
     }
 }
 
