@@ -1,0 +1,39 @@
+body{
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+section{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerr{
+    display: flex;
+    width: 318px;
+    flex-wrap: wrap;
+}
+.boxs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(219, 255, 255);
+    border: 2px solid black;
+}
+.mycircle{
+    font-size: 70px;
+}
+.mycross{
+    font-size: 80px;
+}
+.navbar-brand{
+    font-size: 30px;
+}
