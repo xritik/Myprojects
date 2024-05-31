@@ -37,3 +37,6 @@ section{
 .navbar-brand{
     font-size: 30px;
 }
+.custom-badge {
+    transform: translate(-50%, -60%);
+}

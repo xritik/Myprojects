@@ -1,74 +1,83 @@
+let player1st, player2nd;
+let player1Wins = 0;
+let player2Wins = 0;
 let i = 0;
-        const mybox = document.querySelectorAll(".boxs");
-        for (let j = 0; j < mybox.length; j++) {
-            mybox[j].addEventListener("click", function handleClick(e) {
-                i++;
-                let boxx = e.target;
-                if(i%2 == 0){
-                    boxx.classList.add("bx", "bx-circle", "mycircle");
-                    boxx.setAttribute("id", "circle");
-                }else{
-                    boxx.classList.add("bx", "bx-x", "mycircle");
-                    boxx.setAttribute("id", "cross");
-                }
-                // console.log(boxx);
-                console.log(j)
-                // console.log(i);
-    
-                // Remove the event listener after the first click
-                boxx.removeEventListener("click", handleClick);
-                console.log(mybox[j].getAttribute('id'))
-                if ((mybox[0].getAttribute('id') === 'circle' && mybox[1].getAttribute('id') === 'circle' && mybox[2].getAttribute('id') === 'circle') ||
-                    (mybox[3].getAttribute('id') === 'circle' && mybox[4].getAttribute('id') === 'circle' && mybox[5].getAttribute('id') === 'circle') ||
-                    (mybox[6].getAttribute('id') === 'circle' && mybox[7].getAttribute('id') === 'circle' && mybox[8].getAttribute('id') === 'circle') ||
-                    (mybox[0].getAttribute('id') === 'circle' && mybox[3].getAttribute('id') === 'circle' && mybox[6].getAttribute('id') === 'circle') ||
-                    (mybox[1].getAttribute('id') === 'circle' && mybox[4].getAttribute('id') === 'circle' && mybox[7].getAttribute('id') === 'circle') ||
-                    (mybox[2].getAttribute('id') === 'circle' && mybox[5].getAttribute('id') === 'circle' && mybox[8].getAttribute('id') === 'circle') ||
-                    (mybox[0].getAttribute('id') === 'circle' && mybox[4].getAttribute('id') === 'circle' && mybox[8].getAttribute('id') === 'circle') ||
-                    (mybox[2].getAttribute('id') === 'circle' && mybox[4].getAttribute('id') === 'circle' && mybox[6].getAttribute('id') === 'circle')){
-                    console.log('2nd won');
-                    alert('2nd won')
-                }else if((mybox[0].getAttribute('id') === 'cross' && mybox[1].getAttribute('id') === 'cross' && mybox[2].getAttribute('id') === 'cross') ||
-                        (mybox[3].getAttribute('id') === 'cross' && mybox[4].getAttribute('id') === 'cross' && mybox[5].getAttribute('id') === 'cross') ||
-                        (mybox[6].getAttribute('id') === 'cross' && mybox[7].getAttribute('id') === 'cross' && mybox[8].getAttribute('id') === 'cross') ||
-                        (mybox[0].getAttribute('id') === 'cross' && mybox[3].getAttribute('id') === 'cross' && mybox[6].getAttribute('id') === 'cross') ||
-                        (mybox[1].getAttribute('id') === 'cross' && mybox[4].getAttribute('id') === 'cross' && mybox[7].getAttribute('id') === 'cross') ||
-                        (mybox[2].getAttribute('id') === 'cross' && mybox[5].getAttribute('id') === 'cross' && mybox[8].getAttribute('id') === 'cross') ||
-                        (mybox[0].getAttribute('id') === 'cross' && mybox[4].getAttribute('id') === 'cross' && mybox[8].getAttribute('id') === 'cross') ||
-                        (mybox[2].getAttribute('id') === 'cross' && mybox[4].getAttribute('id') === 'cross' && mybox[6].getAttribute('id') === 'cross')){
-                        console.log('1nd won');
-                        alert('1st won')
-                        }
-            });
+const mybox = document.querySelectorAll(".boxs");
 
-        }
+function resetGame() {
+    mybox.forEach(box => {
+        box.classList.remove("bx", "bx-circle", "bx-x", "mycircle");
+        box.removeAttribute("id");
+        box.addEventListener("click", handleClick);
+    });
+    i = 0;
+}
 
-
-
-
-
-
-        
-
-    function playernaming() {
-    let player1st = document.getElementById("1stplayername").value;
-    let player2nd = document.getElementById("2ndplayername").value;
-    
-    document.getElementById("player1").innerHTML = `<h3>${player1st}- X</h3>`
-    document.getElementById("player2").innerHTML = `<h3>${player2nd}- O</h3>`
+function handleClick(e) {
+    i++;
+    let boxx = e.target;
+    if (i % 2 == 0) {
+        boxx.classList.add("bx", "bx-circle", "mycircle");
+        boxx.setAttribute("id", "circle");
+    } else {
+        boxx.classList.add("bx", "bx-x", "mycircle");
+        boxx.setAttribute("id", "cross");
     }
 
+    boxx.removeEventListener("click", handleClick);
 
+    if (checkWin('circle')) {
+        document.getElementById('winnerMessage').innerText = `2nd Player has won!`;
+        player2Wins++;
+        logWins();
+        showModal();
+    } else if (checkWin('cross')) {
+        document.getElementById('winnerMessage').innerText = `1st Player has won!`;
+        player1Wins++;
+        logWins();
+        showModal();
+    }
+}
 
+function checkWin(symbol) {
+    return (
+        (mybox[0].getAttribute('id') === symbol && mybox[1].getAttribute('id') === symbol && mybox[2].getAttribute('id') === symbol) ||
+        (mybox[3].getAttribute('id') === symbol && mybox[4].getAttribute('id') === symbol && mybox[5].getAttribute('id') === symbol) ||
+        (mybox[6].getAttribute('id') === symbol && mybox[7].getAttribute('id') === symbol && mybox[8].getAttribute('id') === symbol) ||
+        (mybox[0].getAttribute('id') === symbol && mybox[3].getAttribute('id') === symbol && mybox[6].getAttribute('id') === symbol) ||
+        (mybox[1].getAttribute('id') === symbol && mybox[4].getAttribute('id') === symbol && mybox[7].getAttribute('id') === symbol) ||
+        (mybox[2].getAttribute('id') === symbol && mybox[5].getAttribute('id') === symbol && mybox[8].getAttribute('id') === symbol) ||
+        (mybox[0].getAttribute('id') === symbol && mybox[4].getAttribute('id') === symbol && mybox[8].getAttribute('id') === symbol) ||
+        (mybox[2].getAttribute('id') === symbol && mybox[4].getAttribute('id') === symbol && mybox[6].getAttribute('id') === symbol)
+    );
+}
 
+function logWins() {
+    // console.log(`1st Player Wins: ${player1Wins}`);
+    // console.log(`2nd Player Wins: ${player2Wins}`);
+    document.getElementById("win1").innerHTML = player1Wins
+    document.getElementById("win2").innerHTML = player2Wins
+}
 
+function showModal() {
+    var winnerModal = new bootstrap.Modal(document.getElementById('winnerModal'));
+    winnerModal.show();
+}
 
+// function playernaming() {
+//     player1st = document.getElementById("1stplayername").value;
+//     player2nd = document.getElementById("2ndplayername").value;
 
+//     document.getElementById("player1").innerHTML = `<h3>${player1st}- X</h3>`;
+//     document.getElementById("player2").innerHTML = `<h3>${player2nd}- O</h3>`;
+// }
 
-
-
-
-        document.addEventListener("DOMContentLoaded", function() {
-      var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
-      myModal.show();
-    });
+document.getElementById('playAgainBtn').addEventListener('click', resetGame);
+mybox.forEach(box => {
+    box.addEventListener("click", handleClick);
+});
+// document.addEventListener("DOMContentLoaded", function() {
+//     var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
+//     myModal.show();
+    
+// });
